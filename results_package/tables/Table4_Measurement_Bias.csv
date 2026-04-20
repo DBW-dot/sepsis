@@ -1,0 +1,7 @@
+﻿model_name,dataset_name,sample_n,death_n,death_ratio,auroc_death_ovr,auprc_death,brier_death,multiclass_brier,calibration_intercept_death,calibration_slope_death,note
+G1_physiology_only,test_all,1030526,20807,0.020191,0.8396531029900929,0.22742025445074743,0.094509,0.5026584250643157,-3.337963,0.905666,Exploratory enhancement analysis on sampled development subset.
+G1_physiology_only,eicu_external,1051357,22593,0.021489,0.8085059189543842,0.19001272177577566,0.175612,0.5826093290734045,-3.899645,0.776851,Exploratory enhancement analysis on sampled development subset.
+G2_physiology_plus_quality,test_all,1030526,20807,0.020191,0.8630311873939238,0.2626768778248584,0.089226,0.4677977020653934,-3.359986,0.873773,Exploratory enhancement analysis on sampled development subset.
+G2_physiology_plus_quality,eicu_external,1051357,22593,0.021489,0.6929954636601054,0.037150910154150216,0.481709,1.0787316668227316,-4.012926,0.090663,Exploratory enhancement analysis on sampled development subset.
+G3_physiology_quality_plus_intensity,test_all,1030526,20807,0.020191,0.8639252107374664,0.2670296996390591,0.088451,0.4660371803288664,-3.356642,0.873582,Exploratory enhancement analysis on sampled development subset.
+G3_physiology_quality_plus_intensity,eicu_external,1051357,22593,0.021489,0.6868067735748604,0.036217330079026375,0.488322,1.0896763885746659,-4.006637,0.085372,Exploratory enhancement analysis on sampled development subset.

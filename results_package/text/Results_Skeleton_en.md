@@ -1,0 +1,3 @@
+﻿# Results Skeleton (EN)
+
+The final model-ready MIMIC cohort contained 34,125 ICU stays from 27,899 patients, whereas the adapted eICU external-validation cohort contained 9,032 stays from 8,754 patients. Internal M1 performance clearly exceeded the dynamic SOFA-only comparator, but external performance attenuated substantially. Phenotype-related gain remained limited overall and was more compatible with a heterogeneity-structuring role than with a major discrimination gain. The external AUPRC drop was accompanied by a very low external calibration slope, supporting a domain-shift interpretation rather than a simple base-rate explanation.

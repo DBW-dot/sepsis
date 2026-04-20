@@ -1,0 +1,11 @@
+﻿failure_mode,metric_name,value,detail
+base_metric,auprc_gap_internal_minus_external,0.23561896645602287,Main-model AUPRC drop from MIMIC test_all to eICU external.
+base_metric,death_prevalence_difference,0.001298710488732039,Death prevalence difference is small; the external drop is not explained by base rate alone.
+base_metric,calibration_slope_external,0.07282813447513745,External death-probability calibration slope close to 0 implies strong domain mismatch.
+core_subset_constraint,external_validation_core_only_rate,1.0,eICU validation was structurally core-only.
+reduced_vis_proxy_scope,reduced_vis_proxy_available_rate_external,1.0,Reduced VIS proxy was available externally but does not explain the full drop.
+phenotype_transfer,Phenotype_1_auprc_drop,0.2425105007805811,Phenotype_1 AUPRC drop from internal to external.
+phenotype_transfer,Phenotype_2_auprc_drop,0.22551347367312402,Phenotype_2 AUPRC drop from internal to external.
+phenotype_transfer,Phenotype_3_auprc_drop,0.23004812502033123,Phenotype_3 AUPRC drop from internal to external.
+observation_process_shift,domain_auc_physiology_features,0.9836234315504161,How well physiology/context features separate MIMIC from eICU.
+observation_process_shift,domain_auc_quality_intensity_features,0.9636617957683051,How well quality/intensity features separate MIMIC from eICU.

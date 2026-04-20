@@ -1,0 +1,6 @@
+﻿section,anchor_view,feature_name,mean_abs_shap_logit,mean_shap_logit,rank
+aggregate_top20,t_icu_window_24_48h,ventilation_status_current,0.665789,-0.198717,1
+aggregate_top20,t_icu_window_24_48h,bun_latest_value,0.209723,-0.068498,2
+aggregate_top20,t_icu_window_24_48h,fio2_measure_count_last_24h,0.174091,-0.047897,3
+aggregate_top20,t_icu_window_24_48h,oliguria_burden_24h,0.162992,0.023469,4
+aggregate_top20,t_icu_window_24_48h,map_below_65_burden_24h,0.158655,-0.003737,5

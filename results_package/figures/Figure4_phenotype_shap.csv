@@ -1,0 +1,6 @@
+﻿dataset_name,phenotype_label,feature_name,mean_abs_shap_logit,mean_shap_logit,global_rank
+test_all,Phenotype_1,ventilation_status_current,0.670962,-0.222226,1
+test_all,Phenotype_1,bun_latest_value,0.214286,-0.030548,2
+test_all,Phenotype_1,fio2_measure_count_last_24h,0.171036,-0.040532,3
+test_all,Phenotype_1,urine_output_measure_count_last_24h,0.165292,0.006404,4
+test_all,Phenotype_1,map_below_65_burden_24h,0.162241,-0.016092,5

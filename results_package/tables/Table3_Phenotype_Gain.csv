@@ -1,0 +1,13 @@
+﻿dataset_name,subgroup_type,subgroup_value,metric_name,m1_value,c3_value,delta_m1_minus_c3,sample_n,death_n
+test_all,overall,all,auroc_death_ovr,0.870606,0.870489,0.000117,1030526,20807
+test_all,overall,all,auprc_death,0.27329,0.273646,-0.000356,1030526,20807
+test_all,overall,all,multiclass_brier,0.467237,0.468228,-0.000992,1030526,20807
+eicu_external,overall,all,auroc_death_ovr,0.708986,0.70826,0.000726,1051357,22593
+eicu_external,overall,all,auprc_death,0.037671,0.037518,0.000153,1051357,22593
+eicu_external,overall,all,multiclass_brier,0.878823,0.900264,-0.021441,1051357,22593
+test_all,phenotype_label,Phenotype_1,auprc_death,0.276007,0.275071,0.000936,611693,11402
+test_all,phenotype_label,Phenotype_2,auprc_death,,,0.001673,371043,7852
+test_all,phenotype_label,Phenotype_3,auprc_death,,,7.1e-05,47790,1553
+eicu_external,phenotype_label,Phenotype_1,auprc_death,,,4.5e-05,901939,17536
+eicu_external,phenotype_label,Phenotype_2,auprc_death,,,-5.9e-05,88640,2482
+eicu_external,phenotype_label,Phenotype_3,auprc_death,,,-0.000153,60778,2575
