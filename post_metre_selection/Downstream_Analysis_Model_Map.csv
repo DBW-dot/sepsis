@@ -1,0 +1,7 @@
+﻿downstream_analysis,primary_model_to_use,comparison_models,reason
+External recalibration,MT3_physiology_support_proxy,M1_original_rich; C1_dynamic_SOFA,Recalibration should be rerun on the frozen transport model while retaining M1/C1 for contrast.
+DCA,MT3_physiology_support_proxy,M1_original_rich; C1_dynamic_SOFA,Clinical utility should be reassessed using the model selected for external transport.
+strict 24h lead-time,MT3_physiology_support_proxy,M1_original_rich; C1_dynamic_SOFA,Lead-time should use the frozen external transport model and compare against prior main and SOFA baselines.
+phenotype gain reassessment,MT3_physiology_support_proxy vs MT4_support_proxy_phenotype_sensitivity,C3_no_phenotype,"Phenotype should remain a sensitivity/stratification question, not a default driver."
+VIS/proxy contribution analysis,MT1_physiology_only vs MT3_physiology_support_proxy,M1_original_rich,This isolates the shared support proxy contribution and keeps full VIS framed as internal rich information.
+final result tables,MT3_physiology_support_proxy,M1_original_rich; C1_dynamic_SOFA; MT4_support_proxy_phenotype_sensitivity,"Final tables should show M1 as internal rich, MT3 as transport, C1 as comparator, and MT4 as sensitivity only."

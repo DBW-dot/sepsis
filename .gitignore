@@ -3,6 +3,7 @@ __pycache__/
 *.pyo
 *.tmp
 *.log
+*.bak
 
 # Keep the GitHub share repo text-first and ChatGPT-friendly.
 *.duckdb
@@ -10,8 +11,25 @@ __pycache__/
 *.pkl
 *.joblib
 *.onnx
+*.feather
+*.arrow
+*.sqlite
+*.db
 *.csv.gz
 *.gz
+*.zip
+*.7z
+
+# Do not publish patient/stay-level generated matrices or raw modelling artifacts.
+**/output/
+**/logs/
+*Model_Ready*
+*Prediction_Grid*
+*Outcome_Label*
+*patient_level*
+*recalibration_split.csv
+*Sepsis_Cohort_Spine*.csv
+*Sepsis_Cohort_Spine*.parquet
 
 # Do not carry raw source databases into the share repo.
 eicu/

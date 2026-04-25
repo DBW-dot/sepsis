@@ -1,0 +1,84 @@
+﻿feature_name,feature_domain,external_missing_rate,t1_status,t2_status,selection_reason
+antibiotics_active_hours_since_last_status_update,physiology_or_support,0.10723474519121479,exclude,exclude,Removed because status-update metadata reflects local observation workflow more than transportable physiology.
+antibiotics_active_is_observed_or_recorded,physiology_or_support,0.0,exclude,exclude,Removed because status-update metadata reflects local observation workflow more than transportable physiology.
+bilirubin_slope_24h,physiology_or_support,0.43243826787665846,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+bilirubin_total_hours_since_last_real_measurement,physiology_or_support,0.18572949055363688,exclude,exclude,Removed to keep the transport model compact and reduce dependence on measurement-process proxies.
+bilirubin_total_is_forward_filled,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+bilirubin_total_is_observed_current_hour,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+bilirubin_total_latest_value,physiology_or_support,0.5460533386851469,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+bilirubin_total_measure_count_last_24h,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+creatinine_is_forward_filled,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+creatinine_is_observed_current_hour,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+creatinine_measure_count_last_24h,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+culture_flag_hours_since_last_status_update,physiology_or_support,1.0,exclude,exclude,Removed because status-update metadata reflects local observation workflow more than transportable physiology.
+culture_flag_is_observed_or_recorded,physiology_or_support,0.0,exclude,exclude,Removed because status-update metadata reflects local observation workflow more than transportable physiology.
+fio2_is_forward_filled,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+fio2_is_observed_current_hour,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+fio2_latest_value,physiology_or_support,0.6957379843383361,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+fio2_measure_count_last_24h,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+hr_hours_since_last_real_measurement,physiology_or_support,0.0,exclude,exclude,Removed to keep the transport model compact and reduce dependence on measurement-process proxies.
+hr_is_forward_filled,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+hr_is_observed_current_hour,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+hr_measure_count_last_24h,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+hr_sd_24h,physiology_or_support,0.0008512807733243798,exclude,exclude,Removed to keep the transport model compact and reduce dependence on measurement-process proxies.
+lactate_is_forward_filled,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+lactate_is_observed_current_hour,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+lactate_latest_value,physiology_or_support,0.8294118933911127,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+lactate_measure_count_last_24h,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+lactate_slope_6h,physiology_or_support,0.8074165102814743,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+map_is_forward_filled,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+map_is_observed_current_hour,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+map_latest_value,physiology_or_support,0.688134477632241,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+map_measure_count_last_24h,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+map_slope_6h,physiology_or_support,0.6730121167215323,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+pao2_fio2_ratio,physiology_or_support,0.83231766184084,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+platelet_hours_since_last_real_measurement,physiology_or_support,0.00454935859084973,exclude,exclude,Removed to keep the transport model compact and reduce dependence on measurement-process proxies.
+platelet_is_forward_filled,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+platelet_is_observed_current_hour,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+platelet_measure_count_last_24h,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+sbp_latest_value,physiology_or_support,0.7217129861693031,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+shock_index,physiology_or_support,0.7217462764788745,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+shock_index_slope_6h,physiology_or_support,0.7112522197502846,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+spo2_fio2_ratio,physiology_or_support,0.6982984847202235,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+temperature_latest_value,physiology_or_support,0.6773607823032519,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+urine_output_is_forward_filled,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+urine_output_is_observed_current_hour,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+urine_output_latest_value,physiology_or_support,0.7533473406273987,exclude,exclude,Removed because the raw instantaneous signal had high external missingness or unstable transport mapping.
+urine_output_measure_count_last_24h,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+ventilation_status_current,physiology_or_support,0.9348185250110096,exclude,exclude,Removed because respiratory support state mapping was highly incomplete in eICU.
+ventilation_status_hours_since_last_status_update,physiology_or_support,0.9309292657013745,exclude,exclude,Removed because respiratory support state mapping was highly incomplete in eICU.
+ventilation_status_is_observed_or_recorded,physiology_or_support,0.0,exclude,exclude,Removed because status-update metadata reflects local observation workflow more than transportable physiology.
+wbc_hours_since_last_real_measurement,physiology_or_support,0.004467559544474427,exclude,exclude,Removed to keep the transport model compact and reduce dependence on measurement-process proxies.
+wbc_is_forward_filled,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+wbc_is_observed_current_hour,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+wbc_measure_count_last_24h,physiology_or_support,0.0,exclude,exclude,Removed because high-dimensional observation-process signal harmed transportability in prior experiments.
+phenotype_label,phenotype,0.0,exclude,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+hours_from_anchor,alignment,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+hours_since_icu_admission,alignment,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+is_sepsis_on_admission,alignment,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+creatinine_hours_since_last_real_measurement,minimal_recency,0.0026965150752789016,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+fio2_hours_since_last_real_measurement,minimal_recency,0.13432925257548103,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+lactate_hours_since_last_real_measurement,minimal_recency,0.2839549268231438,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+map_hours_since_last_real_measurement,minimal_recency,0.4543480473331133,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+urine_output_hours_since_last_real_measurement,minimal_recency,0.23837003035125082,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+antibiotics_active_current,physiology_or_support,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+bun_latest_value,physiology_or_support,0.0512033495758339,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+creatinine_latest_value,physiology_or_support,0.05043767245569298,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+creatinine_relative_rise_from_24h_min,physiology_or_support,0.05043767245569298,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+culture_flag_current,physiology_or_support,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+high_fio2_burden_24h,physiology_or_support,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+hr_latest_value,physiology_or_support,0.010531151644969311,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+hr_slope_6h,physiology_or_support,0.00329669179926514,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+lactate_gt2_burden_24h,physiology_or_support,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+lactate_gt4_burden_24h,physiology_or_support,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+low_spo2_burden_24h,physiology_or_support,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+map_below_65_burden_24h,physiology_or_support,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+map_deficit,physiology_or_support,0.688134477632241,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+oliguria_burden_24h,physiology_or_support,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+platelet_latest_value,physiology_or_support,0.07147619695308063,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+platelet_relative_drop_24h,physiology_or_support,0.07147619695308063,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+rr_latest_value,physiology_or_support,0.05728786701377363,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+spo2_latest_value,physiology_or_support,0.03093525795709735,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+ventilation_transition_count_24h,physiology_or_support,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+wbc_latest_value,physiology_or_support,0.07189185024687142,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
+worsening_renal_trajectory_flag,physiology_or_support,0.0,keep,keep,Retained for transport-focused core physiology/support or minimal recency provenance.
