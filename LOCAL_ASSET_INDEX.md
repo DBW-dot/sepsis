@@ -30,4 +30,4 @@
 
 ## Current final interpretation
 
-This repository is now centered on `P15_minimal_bedside_model` as the final clinically parsimonious transport model. `MT3_physiology_support_proxy` is retained as a Post-METRE reference, and `M1_original_rich` remains an internal rich/reference model.
+This repository is now centered on `P15_clinically_parsimonious_transport_model` as the final clinically parsimonious transport model (legacy alias `P15_minimal_bedside_model`). `MT3_physiology_support_proxy` is retained as a Post-METRE reference, and `M1_original_rich` remains an internal rich/reference model.

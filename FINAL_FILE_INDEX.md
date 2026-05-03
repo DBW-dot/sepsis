@@ -25,7 +25,8 @@
 - Cleanup plan: `cleanup/cleanup_plan.md`
 - File action manifest: `cleanup/file_action_manifest.csv`
 - Final cleanup report: `cleanup/cleanup_final_report.md`
-- Cleanup execution summary: `cleanup/cleanup_execution_summary.json`
+- Naming harmonisation report: `cleanup/Final_Naming_Harmonisation_Report.md`
+- Naming harmonisation changes: `cleanup/Final_Naming_Harmonisation_Changes.csv`
 - Model role audit: `final_freeze/Final_Model_Role_Audit_Parsimonious.md`
 - Model role assignment: `final_freeze/Final_Model_Role_Assignment_Parsimonious.csv`
 - Heavy artifact manifest: `HEAVY_ARTIFACT_MANIFEST.csv`

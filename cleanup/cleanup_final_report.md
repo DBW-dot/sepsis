@@ -34,4 +34,4 @@ Generated at: 2026-05-03T12:22:28
 
 ## Overall status: PASS
 
-The repository is now organised around `P15_minimal_bedside_model` as the final clinically parsimonious transport model.
+The repository is now organised around `P15_clinically_parsimonious_transport_model` as the final clinically parsimonious transport model (legacy alias `P15_minimal_bedside_model`).

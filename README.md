@@ -6,17 +6,19 @@ Dynamic competing-risk prediction for ICU sepsis deterioration with a clinically
 
 ## 2. Current frozen conclusion
 
-The final manuscript-facing model is `P15_minimal_bedside_model`, a 15-feature clinically parsimonious transport model. It replaces MT3 as the main clinical model while preserving MT3 as the Post-METRE transport reference.
+The final manuscript-facing model is `P15_clinically_parsimonious_transport_model`, using the legacy internal alias `P15_minimal_bedside_model`. It is a 15-feature clinically parsimonious transport model, not an all-bedside manual score. It includes routine vital signs, routine laboratory values, time-anchor variables, and a shared support-intensity proxy. It replaces MT3 as the main clinical model while preserving MT3 as the Post-METRE transport reference.
+
+最终论文主模型为 P15 临床精简迁移模型。该模型沿用历史技术名 `P15_minimal_bedside_model`，但不应理解为完全床旁人工评分；其 15 个特征包括时间锚点、常规生命体征、常规实验室指标和共享支持强度代理变量。
 
 ## 3. Final model roles
 
-- `M1_original_rich` = internal rich/reference model
-- `MT3_physiology_support_proxy` = Post-METRE transport reference
-- `P15_minimal_bedside_model` = final clinically parsimonious transport model
+- `M1_original_rich` / display name `M1_internal_rich_reference_model` = internal rich/reference model
+- `MT3_physiology_support_proxy` / display name `MT3_Post_METRE_transport_reference_model` = Post-METRE transport reference
+- `P15_minimal_bedside_model` / display name `P15_clinically_parsimonious_transport_model` = final clinically parsimonious transport model
 - `P25_clinical_core_model` = sensitivity model
 - `P40_balanced_transport_model` = sensitivity model
 - `C1_dynamic_SOFA` = clinical comparator
-- `phenotype` = stratification / explanation / calibration audit tool only
+- `phenotype` = early static phenotype for stratification / explanation / calibration audit only
 
 ## 4. Key final metrics
 
@@ -30,7 +32,7 @@ The final manuscript-facing model is `P15_minimal_bedside_model`, a 15-feature c
 - Backward-compatible final outputs in `results_package/`
 - Final model role freeze documents in `final_freeze/`
 - Parsimonious feature-set audit outputs in `parsimonious_features/`
-- Cleanup plan, action manifest, and final consistency report in `cleanup/`
+- Cleanup and naming harmonisation reports in `cleanup/`
 - Historical audit material in `archive/`
 - Heavy artifact index in `HEAVY_ARTIFACT_MANIFEST.csv`
 
@@ -56,6 +58,7 @@ Start with:
 - `final_freeze/*Parsimonious*`
 - `parsimonious_features/*`
 - `cleanup/cleanup_final_report.md`
+- `cleanup/Final_Naming_Harmonisation_Report.md`
 
 ## 9. Which folders are archived historical materials
 
@@ -69,4 +72,4 @@ Start with:
 
 ## 10. Warning
 
-Do not use archived pre-METRE outputs, old Step8/Step9 outputs, old lead-time/DCA interfaces, or historical phenotype-gain files as final results. They are retained only for audit and lineage.
+Do not use archived pre-METRE outputs, old Step8/Step9 outputs, old lead-time/DCA interfaces, or historical phenotype-gain files as final results. They are retained only for audit and lineage. Do not describe P15 as an all-bedside or manually calculated score; do not describe MT3 as the final clinical model; do not use phenotype as a default performance driver; and do not conflate full VIS with the shared support-intensity proxy.

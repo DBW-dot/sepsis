@@ -4,7 +4,7 @@
 
 Make the GitHub-facing share repository manuscript-facing and P15-first:
 
-- `P15_minimal_bedside_model` is the final clinically parsimonious transport model.
+- `P15_clinically_parsimonious_transport_model` is the final clinically parsimonious transport model (legacy alias `P15_minimal_bedside_model`).
 - `MT3_physiology_support_proxy` is retained as the Post-METRE transport reference model.
 - `M1_original_rich` is retained as the internal rich/reference model.
 - `phenotype` is retained only as stratification/explanation/calibration audit material.
