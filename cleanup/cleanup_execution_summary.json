@@ -1,0 +1,380 @@
+{
+  "executed_at": "2026-05-03T12:18:00",
+  "copied_final_artifacts": [
+    "final_freeze/Final_Model_Role_Audit_Parsimonious.md",
+    "final_freeze/Final_Model_Role_Assignment_Parsimonious.csv",
+    "final_freeze/FINAL_PI_SUMMARY_PARSIMONIOUS.md",
+    "final_freeze/Final_Parsimonious_Integration_Audit.json",
+    "results_package/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv",
+    "results_package/tables/Table_Parsimonious_Feature_Set_Comparison.csv",
+    "results_package/text/Results_Skeleton_zh_Final_Parsimonious.md",
+    "results_package/text/Discussion_Outline_zh_Final_Parsimonious.md",
+    "results_package/text/Honest_Reporting_Checklist_Final_Parsimonious.md",
+    "parsimonious_features/F15_minimal_bedside_set.csv",
+    "parsimonious_features/F25_clinical_core_set.csv",
+    "parsimonious_features/F40_balanced_transport_set.csv",
+    "parsimonious_features/Feature_Retention_Rationale.csv",
+    "parsimonious_features/Feature_Retention_Report.md",
+    "parsimonious_features/Parsimonious_Model_Comparison.csv",
+    "parsimonious_features/Parsimonious_Model_Report.md",
+    "parsimonious_features/Noninferiority_Assessment.csv",
+    "parsimonious_features/Final_Parsimonious_Model_Recommendation.md",
+    "parsimonious_features/Manuscript_Update_Notes.md"
+  ],
+  "moved_to_archive_count": 87,
+  "deleted_count": 1,
+  "moved_to_archive": [
+    {
+      "from": "final_freeze/Final_Freeze_Audit_Summary.json",
+      "to": "archive/legacy_final_freeze/final_freeze/Final_Freeze_Audit_Summary.json"
+    },
+    {
+      "from": "final_freeze/FINAL_MANUSCRIPT_HANDOFF_INDEX.md",
+      "to": "archive/legacy_final_freeze/final_freeze/FINAL_MANUSCRIPT_HANDOFF_INDEX.md"
+    },
+    {
+      "from": "final_freeze/Final_Model_Role_Audit.md",
+      "to": "archive/legacy_final_freeze/final_freeze/Final_Model_Role_Audit.md"
+    },
+    {
+      "from": "final_freeze/FINAL_PI_SUMMARY.md",
+      "to": "archive/legacy_final_freeze/final_freeze/FINAL_PI_SUMMARY.md"
+    },
+    {
+      "from": "final_freeze/Final_Table_Figure_Consistency_Audit.md",
+      "to": "archive/legacy_final_freeze/final_freeze/Final_Table_Figure_Consistency_Audit.md"
+    },
+    {
+      "from": "final_freeze/Final_Table_Figure_Consistency_Detail.csv",
+      "to": "archive/legacy_final_freeze/final_freeze/Final_Table_Figure_Consistency_Detail.csv"
+    },
+    {
+      "from": "final_freeze/Old_Result_Replacement_Map.csv",
+      "to": "archive/legacy_final_freeze/final_freeze/Old_Result_Replacement_Map.csv"
+    },
+    {
+      "from": "final_freeze/Old_Result_Replacement_Report.md",
+      "to": "archive/legacy_final_freeze/final_freeze/Old_Result_Replacement_Report.md"
+    },
+    {
+      "from": "final_freeze/Required_File_Inventory.csv",
+      "to": "archive/legacy_final_freeze/final_freeze/Required_File_Inventory.csv"
+    },
+    {
+      "from": "final_freeze/run_final_freeze_audit.py",
+      "to": "archive/legacy_final_freeze/final_freeze/run_final_freeze_audit.py"
+    },
+    {
+      "from": "metre_transport/METRE_Core_Feature_Registry.csv",
+      "to": "archive/post_metre_reference/metre_transport/METRE_Core_Feature_Registry.csv"
+    },
+    {
+      "from": "metre_transport/METRE_Core_Feature_Registry_Report.md",
+      "to": "archive/post_metre_reference/metre_transport/METRE_Core_Feature_Registry_Report.md"
+    },
+    {
+      "from": "metre_transport/METRE_Transport_Feature_Set.csv",
+      "to": "archive/post_metre_reference/metre_transport/METRE_Transport_Feature_Set.csv"
+    },
+    {
+      "from": "metre_transport/METRE_Transport_Final_Recommendation.md",
+      "to": "archive/post_metre_reference/metre_transport/METRE_Transport_Final_Recommendation.md"
+    },
+    {
+      "from": "metre_transport/METRE_Transport_Model_Comparison.csv",
+      "to": "archive/post_metre_reference/metre_transport/METRE_Transport_Model_Comparison.csv"
+    },
+    {
+      "from": "metre_transport/METRE_Transport_Model_Report.md",
+      "to": "archive/post_metre_reference/metre_transport/METRE_Transport_Model_Report.md"
+    },
+    {
+      "from": "metre_transport/METRE_vs_Original_Model_Comparison.csv",
+      "to": "archive/post_metre_reference/metre_transport/METRE_vs_Original_Model_Comparison.csv"
+    },
+    {
+      "from": "metre_transport/Rich_Internal_Feature_Set.csv",
+      "to": "archive/post_metre_reference/metre_transport/Rich_Internal_Feature_Set.csv"
+    },
+    {
+      "from": "metre_transport/run_metre_transport_repair.py",
+      "to": "archive/post_metre_reference/metre_transport/run_metre_transport_repair.py"
+    },
+    {
+      "from": "metre_transport/Shared_Support_Intensity_Proxy_Definition.md",
+      "to": "archive/post_metre_reference/metre_transport/Shared_Support_Intensity_Proxy_Definition.md"
+    },
+    {
+      "from": "phenotype_reassessment/phenotype_calibration_stratification.csv",
+      "to": "archive/phenotype_audit/phenotype_reassessment/phenotype_calibration_stratification.csv"
+    },
+    {
+      "from": "phenotype_reassessment/phenotype_role_comparison.csv",
+      "to": "archive/phenotype_audit/phenotype_reassessment/phenotype_role_comparison.csv"
+    },
+    {
+      "from": "phenotype_reassessment/phenotype_role_report.md",
+      "to": "archive/phenotype_audit/phenotype_reassessment/phenotype_role_report.md"
+    },
+    {
+      "from": "phenotype_reassessment/run_phenotype_role_reassessment.py",
+      "to": "archive/phenotype_audit/phenotype_reassessment/run_phenotype_role_reassessment.py"
+    },
+    {
+      "from": "post_metre_clinical_utility/Clinical_Utility_Model_Targets.md",
+      "to": "archive/post_metre_reference/post_metre_clinical_utility/Clinical_Utility_Model_Targets.md"
+    },
+    {
+      "from": "post_metre_clinical_utility/dca_threshold_sweep_post_metre.csv",
+      "to": "archive/post_metre_reference/post_metre_clinical_utility/dca_threshold_sweep_post_metre.csv"
+    },
+    {
+      "from": "post_metre_clinical_utility/eventual_death_leadtime_summary.csv",
+      "to": "archive/post_metre_reference/post_metre_clinical_utility/eventual_death_leadtime_summary.csv"
+    },
+    {
+      "from": "post_metre_clinical_utility/Post_METRE_Leadtime_DCA_Report.md",
+      "to": "archive/post_metre_reference/post_metre_clinical_utility/Post_METRE_Leadtime_DCA_Report.md"
+    },
+    {
+      "from": "post_metre_clinical_utility/run_post_metre_clinical_utility.py",
+      "to": "archive/post_metre_reference/post_metre_clinical_utility/run_post_metre_clinical_utility.py"
+    },
+    {
+      "from": "post_metre_clinical_utility/strict_24h_first_alarm_summary.csv",
+      "to": "archive/post_metre_reference/post_metre_clinical_utility/strict_24h_first_alarm_summary.csv"
+    },
+    {
+      "from": "post_metre_component_reassessment/component_ablation_results.csv",
+      "to": "archive/post_metre_reference/post_metre_component_reassessment/component_ablation_results.csv"
+    },
+    {
+      "from": "post_metre_component_reassessment/component_subgroup_results.csv",
+      "to": "archive/post_metre_reference/post_metre_component_reassessment/component_subgroup_results.csv"
+    },
+    {
+      "from": "post_metre_component_reassessment/Post_METRE_Component_Reassessment_Report.md",
+      "to": "archive/post_metre_reference/post_metre_component_reassessment/Post_METRE_Component_Reassessment_Report.md"
+    },
+    {
+      "from": "post_metre_component_reassessment/run_post_metre_component_reassessment.py",
+      "to": "archive/post_metre_reference/post_metre_component_reassessment/run_post_metre_component_reassessment.py"
+    },
+    {
+      "from": "post_metre_recalibration/eicu_recalibration_split_report.md",
+      "to": "archive/post_metre_reference/post_metre_recalibration/eicu_recalibration_split_report.md"
+    },
+    {
+      "from": "post_metre_recalibration/Post_METRE_Calibration_Curve_Data.csv",
+      "to": "archive/post_metre_reference/post_metre_recalibration/Post_METRE_Calibration_Curve_Data.csv"
+    },
+    {
+      "from": "post_metre_recalibration/Post_METRE_Recalibration_Report.md",
+      "to": "archive/post_metre_reference/post_metre_recalibration/Post_METRE_Recalibration_Report.md"
+    },
+    {
+      "from": "post_metre_recalibration/Post_METRE_Recalibration_Results.csv",
+      "to": "archive/post_metre_reference/post_metre_recalibration/Post_METRE_Recalibration_Results.csv"
+    },
+    {
+      "from": "post_metre_recalibration/Recalibrated_Model_Signoff.md",
+      "to": "archive/post_metre_reference/post_metre_recalibration/Recalibrated_Model_Signoff.md"
+    },
+    {
+      "from": "post_metre_recalibration/recalibration_methods_summary.md",
+      "to": "archive/post_metre_reference/post_metre_recalibration/recalibration_methods_summary.md"
+    },
+    {
+      "from": "post_metre_recalibration/Recalibration_Targets.md",
+      "to": "archive/post_metre_reference/post_metre_recalibration/Recalibration_Targets.md"
+    },
+    {
+      "from": "post_metre_recalibration/run_post_metre_external_recalibration.py",
+      "to": "archive/post_metre_reference/post_metre_recalibration/run_post_metre_external_recalibration.py"
+    },
+    {
+      "from": "post_metre_selection/Downstream_Analysis_Model_Map.csv",
+      "to": "archive/post_metre_reference/post_metre_selection/Downstream_Analysis_Model_Map.csv"
+    },
+    {
+      "from": "post_metre_selection/Model_Role_Assignment.csv",
+      "to": "archive/post_metre_reference/post_metre_selection/Model_Role_Assignment.csv"
+    },
+    {
+      "from": "post_metre_selection/Model_Selection_Criteria.md",
+      "to": "archive/post_metre_reference/post_metre_selection/Model_Selection_Criteria.md"
+    },
+    {
+      "from": "post_metre_selection/Post_METRE_Model_Comparison.csv",
+      "to": "archive/post_metre_reference/post_metre_selection/Post_METRE_Model_Comparison.csv"
+    },
+    {
+      "from": "post_metre_selection/Post_METRE_Model_Signoff_Report.md",
+      "to": "archive/post_metre_reference/post_metre_selection/Post_METRE_Model_Signoff_Report.md"
+    },
+    {
+      "from": "post_metre_selection/run_post_metre_model_selection.py",
+      "to": "archive/post_metre_reference/post_metre_selection/run_post_metre_model_selection.py"
+    },
+    {
+      "from": "recalibration/eicu_calibration_curve_data.csv",
+      "to": "archive/legacy_transport_pre_metre/recalibration/eicu_calibration_curve_data.csv"
+    },
+    {
+      "from": "recalibration/eicu_recalibration_report.md",
+      "to": "archive/legacy_transport_pre_metre/recalibration/eicu_recalibration_report.md"
+    },
+    {
+      "from": "recalibration/eicu_recalibration_results.csv",
+      "to": "archive/legacy_transport_pre_metre/recalibration/eicu_recalibration_results.csv"
+    },
+    {
+      "from": "recalibration/eicu_recalibration_split_definition.md",
+      "to": "archive/legacy_transport_pre_metre/recalibration/eicu_recalibration_split_definition.md"
+    },
+    {
+      "from": "recalibration/run_external_recalibration.py",
+      "to": "archive/legacy_transport_pre_metre/recalibration/run_external_recalibration.py"
+    },
+    {
+      "from": "results_package/figures/Figure1_workflow_notes.md",
+      "to": "archive/legacy_figure_interfaces/results_package/figures/Figure1_workflow_notes.md"
+    },
+    {
+      "from": "results_package/figures/Figure2_main_performance_data.csv",
+      "to": "archive/legacy_figure_interfaces/results_package/figures/Figure2_main_performance_data.csv"
+    },
+    {
+      "from": "results_package/figures/Figure3_dual_anchor_shap.csv",
+      "to": "archive/legacy_figure_interfaces/results_package/figures/Figure3_dual_anchor_shap.csv"
+    },
+    {
+      "from": "results_package/figures/Figure4_phenotype_shap.csv",
+      "to": "archive/legacy_figure_interfaces/results_package/figures/Figure4_phenotype_shap.csv"
+    },
+    {
+      "from": "results_package/figures/Figure5_dca_leadtime.csv",
+      "to": "archive/legacy_figure_interfaces/results_package/figures/Figure5_dca_leadtime.csv"
+    },
+    {
+      "from": "results_package/figures/Figure5_DCA_Leadtime_Post_METRE.csv",
+      "to": "archive/legacy_figure_interfaces/results_package/figures/Figure5_DCA_Leadtime_Post_METRE.csv"
+    },
+    {
+      "from": "results_package/figures/Figure6_external_failure_modes.csv",
+      "to": "archive/legacy_figure_interfaces/results_package/figures/Figure6_external_failure_modes.csv"
+    },
+    {
+      "from": "results_package/figures/Figure6_External_Failure_Modes_Post_METRE.csv",
+      "to": "archive/legacy_figure_interfaces/results_package/figures/Figure6_External_Failure_Modes_Post_METRE.csv"
+    },
+    {
+      "from": "results_package/MANUSCRIPT_READY_INDEX.md",
+      "to": "archive/legacy_result_indices/results_package/MANUSCRIPT_READY_INDEX.md"
+    },
+    {
+      "from": "results_package/POST_METRE_RESULT_INDEX.md",
+      "to": "archive/legacy_result_indices/results_package/POST_METRE_RESULT_INDEX.md"
+    },
+    {
+      "from": "results_package/POST_METRE_RESULT_LINEAGE.csv",
+      "to": "archive/legacy_result_indices/results_package/POST_METRE_RESULT_LINEAGE.csv"
+    },
+    {
+      "from": "results_package/tables/Table2_Main_Model_Comparators.csv",
+      "to": "archive/legacy_pre_metre_results/results_package/tables/Table2_Main_Model_Comparators.csv"
+    },
+    {
+      "from": "results_package/tables/Table2_Main_Model_Comparators_Post_METRE.csv",
+      "to": "archive/misc_superseded/results_package/tables/Table2_Main_Model_Comparators_Post_METRE.csv"
+    },
+    {
+      "from": "results_package/tables/Table3_Phenotype_Gain.csv",
+      "to": "archive/legacy_pre_metre_results/results_package/tables/Table3_Phenotype_Gain.csv"
+    },
+    {
+      "from": "results_package/tables/Table3_Phenotype_Gain_Post_METRE.csv",
+      "to": "archive/legacy_pre_metre_results/results_package/tables/Table3_Phenotype_Gain_Post_METRE.csv"
+    },
+    {
+      "from": "results_package/tables/Table4_Measurement_Bias.csv",
+      "to": "archive/legacy_pre_metre_results/results_package/tables/Table4_Measurement_Bias.csv"
+    },
+    {
+      "from": "results_package/tables/Table4_Measurement_Bias_Post_METRE.csv",
+      "to": "archive/legacy_pre_metre_results/results_package/tables/Table4_Measurement_Bias_Post_METRE.csv"
+    },
+    {
+      "from": "results_package/text/Discussion_Outline_en.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/Discussion_Outline_en.md"
+    },
+    {
+      "from": "results_package/text/Discussion_Outline_zh.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/Discussion_Outline_zh.md"
+    },
+    {
+      "from": "results_package/text/Discussion_Outline_zh_Post_METRE.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/Discussion_Outline_zh_Post_METRE.md"
+    },
+    {
+      "from": "results_package/text/Honest_Reporting_Checklist.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/Honest_Reporting_Checklist.md"
+    },
+    {
+      "from": "results_package/text/Honest_Reporting_Checklist_Post_METRE.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/Honest_Reporting_Checklist_Post_METRE.md"
+    },
+    {
+      "from": "results_package/text/PI_Decision_Summary.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/PI_Decision_Summary.md"
+    },
+    {
+      "from": "results_package/text/PI_Decision_Summary_Post_METRE.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/PI_Decision_Summary_Post_METRE.md"
+    },
+    {
+      "from": "results_package/text/Post_METRE_Final_Project_Assessment.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/Post_METRE_Final_Project_Assessment.md"
+    },
+    {
+      "from": "results_package/text/Results_Skeleton_en.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/Results_Skeleton_en.md"
+    },
+    {
+      "from": "results_package/text/Results_Skeleton_zh.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/Results_Skeleton_zh.md"
+    },
+    {
+      "from": "results_package/text/Results_Skeleton_zh_Post_METRE.md",
+      "to": "archive/legacy_text_and_skeletons/results_package/text/Results_Skeleton_zh_Post_METRE.md"
+    },
+    {
+      "from": "results_package/update_post_metre_result_package.py",
+      "to": "archive/legacy_scripts/results_package/update_post_metre_result_package.py"
+    },
+    {
+      "from": "step9_results_packaging/py/run_step9_results_packaging.py",
+      "to": "archive/legacy_scripts/step9_results_packaging/py/run_step9_results_packaging.py"
+    },
+    {
+      "from": "transport_model/run_transport_model_revision.py",
+      "to": "archive/legacy_transport_pre_metre/transport_model/run_transport_model_revision.py"
+    },
+    {
+      "from": "transport_model/Transport_Feature_Set.csv",
+      "to": "archive/legacy_transport_pre_metre/transport_model/Transport_Feature_Set.csv"
+    },
+    {
+      "from": "transport_model/Transport_Model_Comparison.csv",
+      "to": "archive/legacy_transport_pre_metre/transport_model/Transport_Model_Comparison.csv"
+    },
+    {
+      "from": "transport_model/Transport_Model_Report.md",
+      "to": "archive/legacy_transport_pre_metre/transport_model/Transport_Model_Report.md"
+    }
+  ],
+  "deleted": [
+    "cleanup/__pycache__/run_repository_cleanup.cpython-314.pyc"
+  ],
+  "p15_mainline": true
+}

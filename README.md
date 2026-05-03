@@ -1,31 +1,36 @@
-# Sepsis Dynamic Competing-risk ChatGPT Share Repo
+# Sepsis Dynamic Competing-risk Final Manuscript Share Repo
 
-This folder is a GitHub-ready, ChatGPT-friendly share surface prepared from the local project at `C:\Users\GUO\Desktop\try`.
+This is the manuscript-facing cleaned repository for the final clinically parsimonious model package.
 
-## Included
+## Final model line
 
-- `results_package/`
-  - manuscript tables
-  - figure data interfaces
-  - Results / Discussion skeleton text
-  - supplementary index
-- `step9_results_packaging/py/run_step9_results_packaging.py`
-  - the packaging script used to rebuild `results_package`
-- `LOCAL_ASSET_INDEX.md`
-  - what is included, what is excluded, and why
-- `HEAVY_ARTIFACT_MANIFEST.csv`
-  - a local index of large artifacts that remain outside GitHub
+- Final main clinical transport model: `P15_minimal_bedside_model`
+- Feature count: 15
+- eICU external AUROC/AUPRC/calibration slope: 0.8103 / 0.1892 / 1.0031
+- Post-METRE transport reference: `MT3_physiology_support_proxy`
+- Internal rich/reference model: `M1_original_rich`
+- Clinical comparator: `C1_dynamic_SOFA`
+- Phenotype: stratification / explanation / calibration audit only
 
-## Excluded on purpose
+## Main reading path
 
-- raw MIMIC-IV and eICU data
-- `duckdb`, `parquet`, model binaries, and other heavy local artifacts
-- local runtime logs
+- `final_freeze/FINAL_PI_SUMMARY_PARSIMONIOUS.md`
+- `final_freeze/Final_Model_Role_Audit_Parsimonious.md`
+- `results_package/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv`
+- `results_package/tables/Table_Parsimonious_Feature_Set_Comparison.csv`
+- `results_package/text/Results_Skeleton_zh_Final_Parsimonious.md`
+- `results_package/text/Discussion_Outline_zh_Final_Parsimonious.md`
+- `results_package/text/Honest_Reporting_Checklist_Final_Parsimonious.md`
+- `parsimonious_features/`
 
-## Why this structure
+## Archive
 
-ChatGPT reads text, Markdown, CSV, code, and lightweight documentation much more reliably than large binary artifacts. This repository is therefore designed as an interface layer for code review, manuscript drafting, and result interpretation rather than as a full archival copy of the local workspace.
+Superseded Pre-METRE, Post-METRE transition, old figure/table interfaces, and phenotype audit materials have been moved to `archive/`. They are retained for traceability but are no longer the main manuscript path.
 
-## Next step
+## Data boundary
 
-Create an empty GitHub repository, then connect this folder to that repository and push it. After GitHub indexing catches up, ChatGPT can read this repository much more effectively than it can read the raw local project.
+Raw MIMIC-IV/eICU data, parquet datasets, model binaries, DuckDB databases, and runtime logs are not included in this GitHub repository. See `HEAVY_ARTIFACT_MANIFEST.csv` and `LOCAL_ASSET_INDEX.md`.
+
+## Cleanup audit
+
+See `cleanup/cleanup_plan.md` and `cleanup/file_action_manifest.csv` for every keep/move/delete decision.

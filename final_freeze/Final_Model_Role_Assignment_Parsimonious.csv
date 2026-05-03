@@ -1,0 +1,8 @@
+﻿model_name,role,final_status,default_transport_input,notes
+M1_original_rich,internal rich/reference model,reference_only,False,Strongest MIMIC internal model but poor eICU transport; retained as internal-rich/reference upper bound.
+MT3_physiology_support_proxy,Post-METRE transport reference model,transport_reference,False,Frozen Post-METRE reference using physiology plus shared support-intensity proxy; no full VIS external transport input.
+P15_minimal_bedside_model,final clinically parsimonious transport model,final_main_clinical_transport,True,Final recommended model after parsimonious revision; 15 interpretable bedside/core physiology features.
+P25_clinical_core_model,sensitivity model,sensitivity,False,Clinical-core sensitivity set; not final because external AUPRC drop was borderline.
+P40_balanced_transport_model,sensitivity model,sensitivity,False,Balanced transport sensitivity set; not final because eICU calibration slope was poor.
+C1_dynamic_SOFA,clinical comparator,comparator,False,"Clinical score comparator, not the recommended predictive transport model."
+phenotype,stratification/explanation/calibration audit tool,audit_tool_only,False,Not a default model input and not a performance enhancer claim.

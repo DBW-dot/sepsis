@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-05-03T11:59:43",
+  "p15_final_model": true,
+  "table2_final_parsimonious": "D:\\try\\results_package\\tables\\Table2_Main_Model_Comparators_Final_Parsimonious.csv",
+  "parsimonious_feature_table": "D:\\try\\results_package\\tables\\Table_Parsimonious_Feature_Set_Comparison.csv",
+  "no_retraining": true,
+  "no_cohort_or_label_changes": true,
+  "final_recommended_model": "P15_minimal_bedside_model"
+}
