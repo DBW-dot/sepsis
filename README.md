@@ -1,36 +1,72 @@
-# Sepsis Dynamic Competing-risk Final Manuscript Share Repo
+# Sepsis Dynamic Competing-risk Final Parsimonious Manuscript Repository
 
-This is the manuscript-facing cleaned repository for the final clinically parsimonious model package.
+## 1. Project title
 
-## Final model line
+Dynamic competing-risk prediction for ICU sepsis deterioration with a clinically parsimonious transport model.
 
-- Final main clinical transport model: `P15_minimal_bedside_model`
-- Feature count: 15
-- eICU external AUROC/AUPRC/calibration slope: 0.8103 / 0.1892 / 1.0031
-- Post-METRE transport reference: `MT3_physiology_support_proxy`
-- Internal rich/reference model: `M1_original_rich`
-- Clinical comparator: `C1_dynamic_SOFA`
-- Phenotype: stratification / explanation / calibration audit only
+## 2. Current frozen conclusion
 
-## Main reading path
+The final manuscript-facing model is `P15_minimal_bedside_model`, a 15-feature clinically parsimonious transport model. It replaces MT3 as the main clinical model while preserving MT3 as the Post-METRE transport reference.
 
-- `final_freeze/FINAL_PI_SUMMARY_PARSIMONIOUS.md`
-- `final_freeze/Final_Model_Role_Audit_Parsimonious.md`
-- `results_package/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv`
-- `results_package/tables/Table_Parsimonious_Feature_Set_Comparison.csv`
-- `results_package/text/Results_Skeleton_zh_Final_Parsimonious.md`
-- `results_package/text/Discussion_Outline_zh_Final_Parsimonious.md`
-- `results_package/text/Honest_Reporting_Checklist_Final_Parsimonious.md`
-- `parsimonious_features/`
+## 3. Final model roles
 
-## Archive
+- `M1_original_rich` = internal rich/reference model
+- `MT3_physiology_support_proxy` = Post-METRE transport reference
+- `P15_minimal_bedside_model` = final clinically parsimonious transport model
+- `P25_clinical_core_model` = sensitivity model
+- `P40_balanced_transport_model` = sensitivity model
+- `C1_dynamic_SOFA` = clinical comparator
+- `phenotype` = stratification / explanation / calibration audit tool only
 
-Superseded Pre-METRE, Post-METRE transition, old figure/table interfaces, and phenotype audit materials have been moved to `archive/`. They are retained for traceability but are no longer the main manuscript path.
+## 4. Key final metrics
 
-## Data boundary
+- P15 feature count = 15
+- P15 eICU external AUROC/AUPRC/calibration slope = 0.8103 / 0.1892 / 1.0031
+- P15 external AUPRC was not lower than MT3 in the final parsimonious comparison.
 
-Raw MIMIC-IV/eICU data, parquet datasets, model binaries, DuckDB databases, and runtime logs are not included in this GitHub repository. See `HEAVY_ARTIFACT_MANIFEST.csv` and `LOCAL_ASSET_INDEX.md`.
+## 5. What is included in this repo
 
-## Cleanup audit
+- Final manuscript-facing tables and text in `results_final/`
+- Backward-compatible final outputs in `results_package/`
+- Final model role freeze documents in `final_freeze/`
+- Parsimonious feature-set audit outputs in `parsimonious_features/`
+- Cleanup plan, action manifest, and final consistency report in `cleanup/`
+- Historical audit material in `archive/`
+- Heavy artifact index in `HEAVY_ARTIFACT_MANIFEST.csv`
 
-See `cleanup/cleanup_plan.md` and `cleanup/file_action_manifest.csv` for every keep/move/delete decision.
+## 6. What is excluded and why
+
+Raw MIMIC-IV/eICU data, parquet datasets, model binaries, DuckDB databases, compressed raw files, and runtime logs are excluded. This repository is a lightweight manuscript-facing share layer, not a full local computational archive.
+
+## 7. How to read this repository
+
+Start with:
+
+1. `FINAL_PROJECT_SUMMARY.md`
+2. `FINAL_FILE_INDEX.md`
+3. `final_freeze/FINAL_PI_SUMMARY_PARSIMONIOUS.md`
+4. `results_final/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv`
+5. `results_final/tables/Table_Parsimonious_Feature_Set_Comparison.csv`
+6. `results_final/text/Results_Skeleton_zh_Final_Parsimonious.md`
+7. `results_final/text/Discussion_Outline_zh_Final_Parsimonious.md`
+
+## 8. Which files are final
+
+- `results_final/`
+- `final_freeze/*Parsimonious*`
+- `parsimonious_features/*`
+- `cleanup/cleanup_final_report.md`
+
+## 9. Which folders are archived historical materials
+
+- `archive/legacy_pre_metre_results/`
+- `archive/post_metre_reference/`
+- `archive/legacy_transport_pre_metre/`
+- `archive/legacy_text_and_skeletons/`
+- `archive/legacy_figure_interfaces/`
+- `archive/phenotype_audit/`
+- `archive/legacy_scripts/`
+
+## 10. Warning
+
+Do not use archived pre-METRE outputs, old Step8/Step9 outputs, old lead-time/DCA interfaces, or historical phenotype-gain files as final results. They are retained only for audit and lineage.

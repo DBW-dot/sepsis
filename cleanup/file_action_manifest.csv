@@ -117,3 +117,13 @@ parsimonious_features/Parsimonious_Model_Report.md,replace,Final parsimonious ar
 parsimonious_features/Noninferiority_Assessment.csv,replace,Final parsimonious artifact copied from local verified output into GitHub share repo.,parsimonious_features/Noninferiority_Assessment.csv,low,yes
 parsimonious_features/Final_Parsimonious_Model_Recommendation.md,replace,Final parsimonious artifact copied from local verified output into GitHub share repo.,parsimonious_features/Final_Parsimonious_Model_Recommendation.md,low,yes
 parsimonious_features/Manuscript_Update_Notes.md,replace,Final parsimonious artifact copied from local verified output into GitHub share repo.,parsimonious_features/Manuscript_Update_Notes.md,low,yes
+results_final/tables/Table1_Cohort_Characteristics.csv,keep,Final P15 result copied into results_final main reading path.,results_final/tables/Table1_Cohort_Characteristics.csv,low,yes
+results_final/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv,keep,Final P15 result copied into results_final main reading path.,results_final/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv,low,yes
+results_final/tables/Table_Parsimonious_Feature_Set_Comparison.csv,keep,Final P15 result copied into results_final main reading path.,results_final/tables/Table_Parsimonious_Feature_Set_Comparison.csv,low,yes
+results_final/text/Results_Skeleton_zh_Final_Parsimonious.md,keep,Final P15 result copied into results_final main reading path.,results_final/text/Results_Skeleton_zh_Final_Parsimonious.md,low,yes
+results_final/text/Discussion_Outline_zh_Final_Parsimonious.md,keep,Final P15 result copied into results_final main reading path.,results_final/text/Discussion_Outline_zh_Final_Parsimonious.md,low,yes
+results_final/text/Honest_Reporting_Checklist_Final_Parsimonious.md,keep,Final P15 result copied into results_final main reading path.,results_final/text/Honest_Reporting_Checklist_Final_Parsimonious.md,low,yes
+FINAL_PROJECT_SUMMARY.md,keep,Final repository organisation document for P15 manuscript-facing package.,FINAL_PROJECT_SUMMARY.md,low,yes
+FINAL_FILE_INDEX.md,keep,Final repository organisation document for P15 manuscript-facing package.,FINAL_FILE_INDEX.md,low,yes
+archive/README_archive.md,keep,Final repository organisation document for P15 manuscript-facing package.,archive/README_archive.md,low,yes
+cleanup/cleanup_final_report.md,keep,Final repository organisation document for P15 manuscript-facing package.,cleanup/cleanup_final_report.md,low,yes

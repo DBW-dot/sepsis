@@ -1,0 +1,5 @@
+﻿feature_set,model_name,feature_count,required_labs_count,bedside_only_possible_flag,requires_advanced_drug_dose_flag,requires_complex_engineering_flag,eICU_AUROC,eICU_AUPRC,eICU_calibration_slope,AUPRC_change_vs_MT3,AUPRC_change_pct_vs_MT3,recommendation
+F15,P15_minimal_bedside_model,15,5,False,False,False,0.8102778903274425,0.1891883359451771,1.0030546274076917,0.0028637930612938,0.0153699186213947,final recommended clinically parsimonious transport model
+F25,P25_clinical_core_model,25,5,False,False,True,0.8131160038023698,0.1509037747207982,0.7370345567682463,-0.035420768163085,-0.1901025362244368,sensitivity model; borderline due to external AUPRC loss
+F40,P40_balanced_transport_model,40,9,False,False,True,0.8185670392799904,0.1811482581123691,0.5592450519971471,-0.005176284771514,-0.0277810141991864,sensitivity model; not main due to poor external calibration slope
+MT3 full transport set,MT3_full_transport_set,21,5,False,False,True,0.8090071140511993,0.1863245428838832,0.96515082550835,-0.0,-0.0,Post-METRE transport reference and performance upper-bound comparator

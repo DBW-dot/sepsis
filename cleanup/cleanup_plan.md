@@ -22,7 +22,7 @@ Make the GitHub-facing share repository manuscript-facing and P15-first:
 
 ```json
 {
-  "keep": 11,
+  "keep": 21,
   "delete": 1,
   "move_to_archive": 87,
   "replace": 19
@@ -32,8 +32,11 @@ Make the GitHub-facing share repository manuscript-facing and P15-first:
 ## Final main reading path
 
 - `README.md`
+- `FINAL_PROJECT_SUMMARY.md`
+- `FINAL_FILE_INDEX.md`
 - `LOCAL_ASSET_INDEX.md`
 - `HEAVY_ARTIFACT_MANIFEST.csv`
+- `results_final/`
 - `final_freeze/*Parsimonious*`
 - `results_package/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv`
 - `results_package/tables/Table_Parsimonious_Feature_Set_Comparison.csv`
