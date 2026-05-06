@@ -1,0 +1,6 @@
+proxy_element,role,included_in_P10,included_in_P12,included_in_P15,interpretation
+shared_support_intensity_proxy,final P15 composite transport support-intensity feature,True,True,True,Cross-database support-intensity proxy; not full VIS.
+support_hemodynamic_component,component interpretability,False,False,True,Circulatory support burden component.
+support_lactate_component,balanced candidate component,False,True,True,Perfusion stress component.
+support_renal_component,component interpretability,False,False,True,Renal support/decline component.
+support_respiratory_component,component interpretability,False,False,True,Respiratory support escalation component.

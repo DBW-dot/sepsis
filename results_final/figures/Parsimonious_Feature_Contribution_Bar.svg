@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="563" viewBox="0 0 980 563">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="24" y="30" font-family="Georgia, serif" font-size="20" fill="#1f2933">Estimated feature contribution to external AUPRC</text>
+<text x="280" y="545" font-family="Arial, sans-serif" font-size="12" fill="#52616b">Estimated AUPRC loss if removed from P15</text>
+<text x="24" y="74" font-family="Arial, sans-serif" font-size="12" fill="#243447">shared_support_intensity_proxy</text>
+<rect x="280" y="58" width="530" height="22" rx="4" fill="#9a463d"/>
+<text x="818" y="74" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0140</text>
+<text x="24" y="104" font-family="Arial, sans-serif" font-size="12" fill="#243447">spo2_latest_value</text>
+<rect x="280" y="88" width="454" height="22" rx="4" fill="#2f7da1"/>
+<text x="742" y="104" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0120</text>
+<text x="24" y="134" font-family="Arial, sans-serif" font-size="12" fill="#243447">hours_from_anchor</text>
+<rect x="280" y="118" width="340" height="22" rx="4" fill="#496f5d"/>
+<text x="628" y="134" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0090</text>
+<text x="24" y="164" font-family="Arial, sans-serif" font-size="12" fill="#243447">bun_latest_value</text>
+<rect x="280" y="148" width="265" height="22" rx="4" fill="#946b2d"/>
+<text x="553" y="164" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0070</text>
+<text x="24" y="194" font-family="Arial, sans-serif" font-size="12" fill="#243447">support_hemodynamic_component</text>
+<rect x="280" y="178" width="246" height="22" rx="4" fill="#9a463d"/>
+<text x="534" y="194" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0065</text>
+<text x="24" y="224" font-family="Arial, sans-serif" font-size="12" fill="#243447">support_lactate_component</text>
+<rect x="280" y="208" width="227" height="22" rx="4" fill="#9a463d"/>
+<text x="515" y="224" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0060</text>
+<text x="24" y="254" font-family="Arial, sans-serif" font-size="12" fill="#243447">hours_since_icu_admission</text>
+<rect x="280" y="238" width="208" height="22" rx="4" fill="#496f5d"/>
+<text x="496" y="254" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0055</text>
+<text x="24" y="284" font-family="Arial, sans-serif" font-size="12" fill="#243447">hr_latest_value</text>
+<rect x="280" y="268" width="208" height="22" rx="4" fill="#2f7da1"/>
+<text x="496" y="284" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0055</text>
+<text x="24" y="314" font-family="Arial, sans-serif" font-size="12" fill="#243447">platelet_latest_value</text>
+<rect x="280" y="298" width="181" height="22" rx="4" fill="#946b2d"/>
+<text x="469" y="314" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0048</text>
+<text x="24" y="344" font-family="Arial, sans-serif" font-size="12" fill="#243447">rr_latest_value</text>
+<rect x="280" y="328" width="170" height="22" rx="4" fill="#2f7da1"/>
+<text x="458" y="344" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0045</text>
+<text x="24" y="374" font-family="Arial, sans-serif" font-size="12" fill="#243447">is_sepsis_on_admission</text>
+<rect x="280" y="358" width="151" height="22" rx="4" fill="#496f5d"/>
+<text x="439" y="374" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0040</text>
+<text x="24" y="404" font-family="Arial, sans-serif" font-size="12" fill="#243447">support_renal_component</text>
+<rect x="280" y="388" width="151" height="22" rx="4" fill="#9a463d"/>
+<text x="439" y="404" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0040</text>
+<text x="24" y="434" font-family="Arial, sans-serif" font-size="12" fill="#243447">support_respiratory_component</text>
+<rect x="280" y="418" width="151" height="22" rx="4" fill="#9a463d"/>
+<text x="439" y="434" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0040</text>
+<text x="24" y="464" font-family="Arial, sans-serif" font-size="12" fill="#243447">wbc_latest_value</text>
+<rect x="280" y="448" width="132" height="22" rx="4" fill="#946b2d"/>
+<text x="420" y="464" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0035</text>
+<text x="24" y="494" font-family="Arial, sans-serif" font-size="12" fill="#243447">creatinine_latest_value</text>
+<rect x="280" y="478" width="113" height="22" rx="4" fill="#946b2d"/>
+<text x="401" y="494" font-family="Arial, sans-serif" font-size="12" fill="#243447">0.0030</text>
+</svg>

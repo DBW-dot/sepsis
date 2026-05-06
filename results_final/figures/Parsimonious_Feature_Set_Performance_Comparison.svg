@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="24" y="30" font-family="Georgia, serif" font-size="20" fill="#1f2933">Parsimonious feature-set performance comparison</text>
+<text x="24" y="54" font-family="Arial, sans-serif" font-size="12" fill="#52616b">P10/P12 are simulated estimates; P15/MT3/F25/F40 are frozen observed metrics.</text>
+<line x1="110" y1="340" x2="940" y2="340" stroke="#9aa5b1" stroke-width="1"/>
+<rect x="110" y="284" width="34" height="56" rx="4" fill="#496f5d"/>
+<text x="102" y="278" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.795</text>
+<rect x="154" y="244" width="34" height="96" rx="4" fill="#2f7da1"/>
+<text x="146" y="238" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.165</text>
+<rect x="198" y="209" width="34" height="131" rx="4" fill="#9a463d"/>
+<text x="190" y="203" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.918</text>
+<text x="100" y="362" font-family="Arial, sans-serif" font-size="11" fill="#243447">P10_ultra_minimal_transport_set</text>
+<rect x="280" y="260" width="34" height="80" rx="4" fill="#496f5d"/>
+<text x="272" y="254" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.801</text>
+<rect x="324" y="208" width="34" height="132" rx="4" fill="#2f7da1"/>
+<text x="316" y="202" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.175</text>
+<rect x="368" y="190" width="34" height="150" rx="4" fill="#9a463d"/>
+<text x="360" y="184" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.948</text>
+<text x="270" y="362" font-family="Arial, sans-serif" font-size="11" fill="#243447">P12_balanced_transport_set</text>
+<rect x="450" y="224" width="34" height="116" rx="4" fill="#496f5d"/>
+<text x="442" y="218" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.810</text>
+<rect x="494" y="152" width="34" height="188" rx="4" fill="#2f7da1"/>
+<text x="486" y="146" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.189</text>
+<rect x="538" y="157" width="34" height="183" rx="4" fill="#9a463d"/>
+<text x="530" y="151" font-family="Arial, sans-serif" font-size="10" fill="#243447">1.003</text>
+<text x="440" y="362" font-family="Arial, sans-serif" font-size="11" fill="#243447">P15_clinically_parsimonious_transport_model</text>
+<rect x="620" y="229" width="34" height="111" rx="4" fill="#496f5d"/>
+<text x="612" y="223" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.809</text>
+<rect x="664" y="163" width="34" height="177" rx="4" fill="#2f7da1"/>
+<text x="656" y="157" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.186</text>
+<rect x="708" y="180" width="34" height="160" rx="4" fill="#9a463d"/>
+<text x="700" y="174" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.965</text>
+<text x="610" y="362" font-family="Arial, sans-serif" font-size="11" fill="#243447">MT3 full transport set</text>
+<rect x="680" y="77" width="12" height="12" fill="#496f5d"/>
+<text x="698" y="88" font-family="Arial, sans-serif" font-size="12" fill="#243447">eICU_AUROC</text>
+<rect x="680" y="99" width="12" height="12" fill="#2f7da1"/>
+<text x="698" y="110" font-family="Arial, sans-serif" font-size="12" fill="#243447">eICU_AUPRC</text>
+<rect x="680" y="121" width="12" height="12" fill="#9a463d"/>
+<text x="698" y="132" font-family="Arial, sans-serif" font-size="12" fill="#243447">eICU_calibration_slope</text>
+</svg>
