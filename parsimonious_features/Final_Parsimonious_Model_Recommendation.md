@@ -48,6 +48,28 @@ P15 remains the final recommendation because it is the smallest feature set in t
 - `support_renal_component`: support_intensity_proxy - Component-level renal support/decline signal.
 - `support_respiratory_component`: support_intensity_proxy - Component-level respiratory support escalation signal.
 
+## Clinical Implementability Scorecard
+
+Scores are rule-based ratings from 1 to 5. They combine clinical interpretability, cross-database stability, implementation ease, and simulated model importance. They are not new model coefficients.
+
+| feature | category | clinical | cross-db stability | implementation ease | model importance | weighted score | recommendation |
+|---|---|---:|---:|---:|---:|---:|---|
+| `spo2_latest_value` | vital_sign | 5 | 4 | 5 | 5 | 4.75 | core_keep |
+| `hr_latest_value` | vital_sign | 5 | 5 | 5 | 3 | 4.6 | core_keep |
+| `hours_from_anchor` | time_anchor | 4 | 5 | 5 | 4 | 4.5 | core_keep |
+| `shared_support_intensity_proxy` | support_intensity_proxy | 5 | 5 | 3 | 5 | 4.5 | core_keep |
+| `rr_latest_value` | vital_sign | 5 | 4 | 5 | 3 | 4.35 | core_keep |
+| `hours_since_icu_admission` | time_anchor | 4 | 5 | 5 | 3 | 4.3 | core_keep |
+| `is_sepsis_on_admission` | time_anchor | 4 | 5 | 5 | 3 | 4.3 | core_keep |
+| `bun_latest_value` | routine_lab | 5 | 4 | 4 | 4 | 4.3 | core_keep |
+| `platelet_latest_value` | routine_lab | 5 | 4 | 4 | 3 | 4.1 | core_keep |
+| `support_hemodynamic_component` | support_intensity_proxy | 4 | 5 | 3 | 4 | 4.0 | balanced_or_P15_keep |
+| `creatinine_latest_value` | routine_lab | 5 | 4 | 4 | 2 | 3.9 | core_keep |
+| `support_renal_component` | support_intensity_proxy | 4 | 5 | 3 | 3 | 3.8 | balanced_or_P15_keep |
+| `support_respiratory_component` | support_intensity_proxy | 4 | 5 | 3 | 3 | 3.8 | balanced_or_P15_keep |
+| `support_lactate_component` | support_intensity_proxy | 4 | 4 | 3 | 4 | 3.75 | balanced_or_P15_keep |
+| `wbc_latest_value` | routine_lab | 4 | 4 | 4 | 2 | 3.6 | balanced_or_P15_keep |
+
 ## Single-Feature Sensitivity Summary
 
 Largest estimated external AUPRC losses if removed from P15:
@@ -72,6 +94,7 @@ Support-intensity must continue to be described as a transportable proxy, not fu
 
 - `parsimonious_features/Feature_Set_Combination_Analysis.csv`
 - `parsimonious_features/Feature_Contribution_Estimates.csv`
+- `parsimonious_features/Feature_Implementability_Scorecard.csv`
 - `parsimonious_features/Single_Feature_Removal_Sensitivity.csv`
 - `parsimonious_features/Support_Intensity_Proxy_Interpretability.csv`
 - `results_final/tables/Table_Parsimonious_Feature_Set_Comparison.csv`

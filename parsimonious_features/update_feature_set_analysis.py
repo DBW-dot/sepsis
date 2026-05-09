@@ -81,6 +81,24 @@ FEATURE_NOTES = {
     "support_respiratory_component": "Component-level respiratory support escalation signal.",
 }
 
+IMPLEMENTABILITY_SCORE = {
+    "hours_from_anchor": {"clinical": 4, "stability": 5, "ease": 5},
+    "hours_since_icu_admission": {"clinical": 4, "stability": 5, "ease": 5},
+    "is_sepsis_on_admission": {"clinical": 4, "stability": 5, "ease": 5},
+    "hr_latest_value": {"clinical": 5, "stability": 5, "ease": 5},
+    "rr_latest_value": {"clinical": 5, "stability": 4, "ease": 5},
+    "spo2_latest_value": {"clinical": 5, "stability": 4, "ease": 5},
+    "bun_latest_value": {"clinical": 5, "stability": 4, "ease": 4},
+    "creatinine_latest_value": {"clinical": 5, "stability": 4, "ease": 4},
+    "platelet_latest_value": {"clinical": 5, "stability": 4, "ease": 4},
+    "wbc_latest_value": {"clinical": 4, "stability": 4, "ease": 4},
+    "shared_support_intensity_proxy": {"clinical": 5, "stability": 5, "ease": 3},
+    "support_hemodynamic_component": {"clinical": 4, "stability": 5, "ease": 3},
+    "support_lactate_component": {"clinical": 4, "stability": 4, "ease": 3},
+    "support_renal_component": {"clinical": 4, "stability": 5, "ease": 3},
+    "support_respiratory_component": {"clinical": 4, "stability": 5, "ease": 3},
+}
+
 # These are deterministic sensitivity estimates for subset simulation only.
 # They are not retrained model results and are written as such in all outputs.
 REMOVAL_PENALTY = {
@@ -206,6 +224,30 @@ def estimate_from_p15(features: list[str], p15_external: dict[str, str]) -> dict
         "eICU_calibration_slope": fnum(p15_external["calibration_slope_death"])
         - sum(REMOVAL_PENALTY[f]["slope"] for f in missing),
     }
+
+
+def model_importance_score(feature: str) -> int:
+    auprc_loss = REMOVAL_PENALTY[feature]["auprc"]
+    if auprc_loss >= 0.010:
+        return 5
+    if auprc_loss >= 0.006:
+        return 4
+    if auprc_loss >= 0.004:
+        return 3
+    if auprc_loss >= 0.003:
+        return 2
+    return 1
+
+
+def weighted_score(feature: str) -> float:
+    scores = IMPLEMENTABILITY_SCORE[feature]
+    return round(
+        0.30 * scores["clinical"]
+        + 0.25 * scores["stability"]
+        + 0.25 * scores["ease"]
+        + 0.20 * model_importance_score(feature),
+        2,
+    )
 
 
 def threshold_pass(auroc: float, auprc: float, slope: float) -> bool:
@@ -628,6 +670,48 @@ def main() -> None:
         ["proxy_element", "role", "included_in_P10", "included_in_P12", "included_in_P15", "interpretation"],
     )
 
+    scorecard_rows = []
+    for feature in P15_FEATURES:
+        scores = IMPLEMENTABILITY_SCORE[feature]
+        scorecard_rows.append(
+            {
+                "feature": feature,
+                "feature_category": FEATURE_CATEGORY[feature],
+                "clinical_interpretability_score_1to5": scores["clinical"],
+                "cross_database_stability_score_1to5": scores["stability"],
+                "implementation_ease_score_1to5": scores["ease"],
+                "model_importance_score_1to5": model_importance_score(feature),
+                "weighted_retention_score_1to5": weighted_score(feature),
+                "included_in_P10": feature in FEATURE_SETS["P10_ultra_minimal_transport_set"]["features"],
+                "included_in_P12": feature in FEATURE_SETS["P12_balanced_transport_set"]["features"],
+                "included_in_P15": True,
+                "retention_recommendation": (
+                    "core_keep"
+                    if feature in FEATURE_SETS["P10_ultra_minimal_transport_set"]["features"]
+                    else "balanced_or_P15_keep"
+                ),
+                "rationale": FEATURE_NOTES[feature],
+                "evidence_boundary": "scores are rule-based implementability ratings plus simulated P15 removal impact; no retraining",
+            }
+        )
+    scorecard_rows.sort(key=lambda row: float(row["weighted_retention_score_1to5"]), reverse=True)
+    scorecard_fields = [
+        "feature",
+        "feature_category",
+        "clinical_interpretability_score_1to5",
+        "cross_database_stability_score_1to5",
+        "implementation_ease_score_1to5",
+        "model_importance_score_1to5",
+        "weighted_retention_score_1to5",
+        "included_in_P10",
+        "included_in_P12",
+        "included_in_P15",
+        "retention_recommendation",
+        "rationale",
+        "evidence_boundary",
+    ]
+    write_csv(PARS_DIR / "Feature_Implementability_Scorecard.csv", scorecard_rows, scorecard_fields)
+
     write_csv(
         FIG_DIR / "Parsimonious_Feature_Contribution_Bar.csv",
         contribution_rows,
@@ -698,6 +782,12 @@ def main() -> None:
     p15_feature_md = "\n".join(
         [f"- `{feature}`: {FEATURE_CATEGORY[feature]} - {FEATURE_NOTES[feature]}" for feature in P15_FEATURES]
     )
+    scorecard_md_rows = "\n".join(
+        [
+            f"| `{row['feature']}` | {row['feature_category']} | {row['clinical_interpretability_score_1to5']} | {row['cross_database_stability_score_1to5']} | {row['implementation_ease_score_1to5']} | {row['model_importance_score_1to5']} | {row['weighted_retention_score_1to5']} | {row['retention_recommendation']} |"
+            for row in scorecard_rows
+        ]
+    )
 
     recommendation = f"""# Final Parsimonious Model Recommendation
 
@@ -732,6 +822,14 @@ P15 remains the final recommendation because it is the smallest feature set in t
 
 {p15_feature_md}
 
+## Clinical Implementability Scorecard
+
+Scores are rule-based ratings from 1 to 5. They combine clinical interpretability, cross-database stability, implementation ease, and simulated model importance. They are not new model coefficients.
+
+| feature | category | clinical | cross-db stability | implementation ease | model importance | weighted score | recommendation |
+|---|---|---:|---:|---:|---:|---:|---|
+{scorecard_md_rows}
+
 ## Single-Feature Sensitivity Summary
 
 Largest estimated external AUPRC losses if removed from P15:
@@ -752,6 +850,7 @@ Support-intensity must continue to be described as a transportable proxy, not fu
 
 - `parsimonious_features/Feature_Set_Combination_Analysis.csv`
 - `parsimonious_features/Feature_Contribution_Estimates.csv`
+- `parsimonious_features/Feature_Implementability_Scorecard.csv`
 - `parsimonious_features/Single_Feature_Removal_Sensitivity.csv`
 - `parsimonious_features/Support_Intensity_Proxy_Interpretability.csv`
 - `results_final/tables/Table_Parsimonious_Feature_Set_Comparison.csv`
@@ -761,6 +860,58 @@ Support-intensity must continue to be described as a transportable proxy, not fu
 - `results_final/figures/Support_Intensity_Proxy_Interpretability.svg`
 """
     RECOMMENDATION_PATH.write_text(recommendation, encoding="utf-8")
+
+    zh_report = f"""# P15 特征集优化与临床可实施性评估
+
+## 证据边界
+
+本报告只在已冻结的 `P15_clinically_parsimonious_transport_model` 上做特征组合分析和模拟敏感性评估；没有修改标签、训练逻辑、模型系数或任何原始数据。P10/P12 的性能是基于 P15 单特征移除罚分的确定性模拟估计，不是新训练结果。
+
+## 当前冻结性能
+
+- eICU AUROC: {p15_metrics['eICU_AUROC']:.4f}
+- eICU AUPRC: {p15_metrics['eICU_AUPRC']:.4f}
+- eICU calibration slope: {p15_metrics['eICU_calibration_slope']:.4f}
+
+## 候选特征组合
+
+| 组合 | 特征数 | eICU AUROC | eICU AUPRC | 校准斜率 | 证据类型 | 结论 |
+|---|---:|---:|---:|---:|---|---|
+{feature_set_md_rows}
+
+## 推荐结论
+
+正式推荐仍为 `P15_clinically_parsimonious_transport_model`。理由是：P15 是当前仓库中最小的、具有真实冻结外部验证指标且满足 AUROC >= 0.78、AUPRC >= 0.15、calibration slope >= 0.8 的模型。`P10_ultra_minimal_transport_set` 和 `P12_balanced_transport_set` 可以作为临床实施敏感性候选，但在真正重训和外部验证前不能替代 P15。
+
+## proxy 精简解释
+
+极简 P10 只保留 `shared_support_intensity_proxy`，删除 4 个 component-level proxy，以换取更低实施负担。平衡 P12 恢复 `support_lactate_component` 和 `wbc_latest_value`，提升灌注/炎症解释性。原版 P15 保留全部 5 个支持强度 proxy，因此最适合作为已验证的最终版本。
+
+## 单特征敏感性
+
+| 移除特征 | 类别 | 估计 AUROC 变化 | 估计 AUPRC 变化 | 估计校准斜率变化 |
+|---|---|---:|---:|---:|
+{top_loss_md_rows}
+
+## 可实施性评分
+
+| 特征 | 类别 | 临床解释性 | 跨库稳定性 | 实施便利性 | 模型重要性 | 加权评分 | 建议 |
+|---|---|---:|---:|---:|---:|---:|---|
+{scorecard_md_rows}
+
+## 文件索引
+
+- `parsimonious_features/Feature_Set_Combination_Analysis.csv`
+- `parsimonious_features/Feature_Implementability_Scorecard.csv`
+- `parsimonious_features/Feature_Contribution_Estimates.csv`
+- `parsimonious_features/Single_Feature_Removal_Sensitivity.csv`
+- `parsimonious_features/Support_Intensity_Proxy_Interpretability.csv`
+- `results_final/tables/Table_Parsimonious_Feature_Set_Comparison.csv`
+- `results_final/figures/Parsimonious_Feature_Contribution_MultiMetric.svg`
+"""
+    (PARS_DIR / "P15_Feature_Optimization_Clinical_Implementability_Report.md").write_text(
+        zh_report, encoding="utf-8"
+    )
 
     print("Generated parsimonious feature-set update artifacts.")
     print(f"P15 external AUROC/AUPRC/slope retained: {p15_metrics['eICU_AUROC']:.4f}/{p15_metrics['eICU_AUPRC']:.4f}/{p15_metrics['eICU_calibration_slope']:.4f}")
