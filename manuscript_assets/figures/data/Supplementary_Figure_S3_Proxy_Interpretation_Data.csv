@@ -1,0 +1,6 @@
+﻿proxy_element,clinical_label,role,external_transport_use,full_VIS
+shared_support_intensity_proxy,overall support burden,overall proxy,yes,no
+support_hemodynamic_component,hemodynamic support burden,component,yes,no
+support_lactate_component,lactate/perfusion burden,interpretability component,yes,no
+support_renal_component,renal support burden,component,yes,no
+support_respiratory_component,respiratory support burden,component,yes,no

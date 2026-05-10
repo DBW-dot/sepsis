@@ -1,0 +1,7 @@
+﻿stage,items,note
+Data sources,MIMIC-IV; eICU,MIMIC development/internal; eICU external validation
+Cohort construction,Sepsis-3 suspected infection; t_ICU; t_sepsis,Dual-anchor cohort spine
+Dynamic grid,Hourly prediction grid; prefix-only observations,No post-prediction information
+Competing-risk labels,ICU death within 24h; alive discharge/transfer; continued ICU stay,24h outcome window
+Model chain,M1; MT3; P15; P12/P10 sensitivity,P15 final main model; P12/P10 do not replace P15
+Clinical realism audit,Lab freshness; latest-available carry-forward,No hourly lab assumption

@@ -1,0 +1,7 @@
+﻿model_display_name,model_role,feature_count,eICU_AUROC,eICU_AUPRC,eICU_calibration_slope
+M1_internal_rich_reference_model,internal rich reference,70,0.709,0.0377,0.0728
+MT3_Post_METRE_transport_reference_model,Post-METRE reference,21,0.809,0.1863,0.9652
+P15_clinically_parsimonious_transport_model,formal main model,15,0.8103,0.1892,1.0031
+P12_true_trained_clinical_landing_model,validated simplified implementation candidate,12,0.8038,0.1767,1.01
+P10_true_trained_ultra_minimal_sensitivity_model,validated ultra-minimal sensitivity candidate,10,0.7978,0.1711,1.0133
+C1_dynamic_SOFA_clinical_comparator,clinical comparator,15,0.7253,0.0669,0.4919

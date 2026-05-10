@@ -1,0 +1,16 @@
+﻿feature_name,module,acquisition_source,direct_measurement_or_derived,expected_update_frequency
+hours_since_icu_admission,Time anchors,EHR-derived,derived,hourly from timestamp logic
+hours_from_anchor,Time anchors,EHR-derived,derived,hourly from anchor logic
+is_sepsis_on_admission,Time anchors,EHR-derived,derived,fixed at cohort construction
+heart_rate_latest_value,Vital signs,bedside monitor,direct measurement,near-continuous or hourly charted
+respiratory_rate_latest_value,Vital signs,bedside monitor,direct measurement,hourly charted or monitor-derived
+spo2_latest_value,Vital signs,bedside monitor,direct measurement,near-continuous or hourly charted
+creatinine_latest_value,Routine labs,routine laboratory,direct measurement,episodic; commonly daily or more frequent in unstable ICU patients
+bun_latest_value,Routine labs,routine laboratory,direct measurement,episodic; commonly daily or more frequent in unstable ICU patients
+platelet_latest_value,Routine labs,routine laboratory,direct measurement,episodic; commonly daily in ICU
+wbc_latest_value,Routine labs,routine laboratory,direct measurement,episodic; commonly daily in ICU
+shared_support_intensity_proxy,Support-intensity proxy,treatment/support-derived,derived,hourly or after support-status update
+support_hemodynamic_component,Support-intensity proxy,treatment/support-derived,derived,hourly or after support-status update
+support_lactate_component,Support-intensity proxy,treatment/support-derived,derived,episodic to hourly depending on lactate/source updates
+support_renal_component,Support-intensity proxy,treatment/support-derived,derived,hourly or after urine/output/support update
+support_respiratory_component,Support-intensity proxy,treatment/support-derived,derived,hourly or after respiratory-support update
