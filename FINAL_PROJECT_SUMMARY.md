@@ -35,3 +35,11 @@ P15 remains the formal main model. P12 is the preferred simplification candidate
 ## Ready for manuscript writing
 
 Yes, with the above boundaries. Use `results_final/` and `final_freeze/` as the final-facing sources. Historical files under `archive/` are retained only for audit and lineage.
+
+## P12/P10 True-Training Validation Update
+
+- P12/P10 have been true-trained under the frozen Step 1-8 setup without changing cohort, labels, anchors, splits, or features.
+- P12 role after validation: `validated_simplified_implementation_candidate`.
+- P10 role after validation: `validated_ultra_minimal_sensitivity_candidate_but_not_main_model`.
+- Frozen P15 remains the final manuscript-facing model unless the PI explicitly re-freezes the model hierarchy.
+- full VIS remains separate from the shared support-intensity proxy.

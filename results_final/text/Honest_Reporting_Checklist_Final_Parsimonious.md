@@ -16,3 +16,11 @@
 - DCA and lead-time outputs should be framed as risk stratification evidence, not automatic intervention triggers.
 - Strict 24h first-alarm lead-time and exploratory eventual-death lead-time must be described separately.
 - Do not hide unfavorable sensitivity results, including weaker calibration or AUPRC drops in non-final feature sets.
+
+## P12/P10 True-Training Validation
+
+- P12/P10 have now moved from simulated sensitivity estimates into true-training validation using MIMIC train only and eICU external validation only.
+- P12 noninferiority status vs frozen P15: `True`; recommended role: `validated_simplified_implementation_candidate`.
+- P10 noninferiority status vs frozen P15: `True`; recommended role: `validated_ultra_minimal_sensitivity_candidate_but_not_main_model`.
+- P15 remains the final manuscript-facing model unless explicitly re-frozen after PI decision.
+- P12/P10 DCA and strict 24h first-alarm outputs are supplementary implementation analyses and must not be framed as automatic intervention triggers.

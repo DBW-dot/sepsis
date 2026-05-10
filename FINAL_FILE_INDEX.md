@@ -42,3 +42,14 @@
 - `archive/legacy_figure_interfaces/`
 - `archive/phenotype_audit/`
 - `archive/legacy_scripts/`
+
+## P12/P10 True-Training Validation Files
+
+- `results_final/clinical_implementation/P12_P10_TrueTraining_Model_Comparison.csv`
+- `results_final/clinical_implementation/P12_P10_TrueTraining_Noninferiority_Assessment.csv`
+- `results_final/clinical_implementation/P12_P10_TrueTraining_DCA_Summary.csv`
+- `results_final/clinical_implementation/P12_P10_TrueTraining_Leadtime_Summary.csv`
+- `results_final/clinical_implementation/P12_P10_TrueTraining_Validation_Report.md`
+- `results_final/clinical_implementation/P12_P10_TrueTraining_PI_Summary_zh.md`
+- `results_final/clinical_implementation/P12_P10_P15_Performance_Comparison.csv`
+- `results_final/clinical_implementation/P12_P10_P15_Calibration_Comparison.csv`
