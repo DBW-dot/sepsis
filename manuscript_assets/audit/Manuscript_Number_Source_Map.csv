@@ -1,0 +1,25 @@
+﻿number_or_statement,value,source_file,source_column_or_section,manuscript_location_recommendation,caution_note
+P15 eICU AUROC,0.8103,results_final/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv,eICU_AUROC,Results main text / Table 2,main formal model result
+P15 eICU AUPRC,0.1892,results_final/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv,eICU_AUPRC,Results main text / Table 2,main formal model result
+P15 eICU calibration slope,1.0031,results_final/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv,eICU_calibration_slope,Results main text / Table 2,main formal model result
+P15 MIMIC AUROC,0.7977,results_final/clinical_implementation/P12_P10_TrueTraining_Model_Comparison.csv,auroc_death_ovr,Results / Table 2,MIMIC internal row
+P15 MIMIC AUPRC,0.1982,results_final/clinical_implementation/P12_P10_TrueTraining_Model_Comparison.csv,auprc_death,Results / Table 2,MIMIC internal row
+P15 MIMIC Brier,0.5843,results_final/clinical_implementation/P12_P10_TrueTraining_Model_Comparison.csv,multiclass_brier,Results / Table 2,multiclass Brier
+M1 eICU AUROC/AUPRC/slope,0.7090 / 0.0377 / 0.0728,results_final/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv,M1_original_rich row,Table 2,internal rich/reference model only
+MT3 eICU AUROC/AUPRC/slope,0.8090 / 0.1863 / 0.9652,results_final/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv,MT3_physiology_support_proxy row,Table 2,"Post-METRE transport reference, not final model"
+C1 dynamic SOFA eICU AUROC/AUPRC/slope,0.7253 / 0.0669 / 0.4919,results_final/tables/Table2_Main_Model_Comparators_Final_Parsimonious.csv,C1_dynamic_SOFA row,Table 2,clinical score comparator
+P12 eICU AUROC,0.8038,results_final/clinical_implementation/P12_P10_TrueTraining_Model_Comparison.csv,auroc_death_ovr,Table 3,true-trained simplified candidate
+P12 eICU AUPRC,0.1767,results_final/clinical_implementation/P12_P10_TrueTraining_Model_Comparison.csv,auprc_death,Table 3,true-trained simplified candidate
+P12 eICU calibration slope,1.0100,results_final/clinical_implementation/P12_P10_TrueTraining_Model_Comparison.csv,calibration_slope_death,Table 3,true-trained simplified candidate
+P12 relative AUPRC drop vs P15,6.5828%,results_final/clinical_implementation/P12_P10_TrueTraining_Noninferiority_Assessment.csv,relative_AUPRC_drop_pct_vs_P15,Table 3,does not automatically replace P15
+P12 noninferiority status,True,results_final/clinical_implementation/P12_P10_TrueTraining_Noninferiority_Assessment.csv,whether_noninferior_to_P15,Table 3,candidate status only
+P10 eICU AUROC,0.7978,results_final/clinical_implementation/P12_P10_TrueTraining_Model_Comparison.csv,auroc_death_ovr,Table 3,ultra-minimal sensitivity candidate
+P10 eICU AUPRC,0.1711,results_final/clinical_implementation/P12_P10_TrueTraining_Model_Comparison.csv,auprc_death,Table 3,ultra-minimal sensitivity candidate
+P10 eICU calibration slope,1.0133,results_final/clinical_implementation/P12_P10_TrueTraining_Model_Comparison.csv,calibration_slope_death,Table 3,ultra-minimal sensitivity candidate
+P10 relative AUPRC drop vs P15,9.5577%,results_final/clinical_implementation/P12_P10_TrueTraining_Noninferiority_Assessment.csv,relative_AUPRC_drop_pct_vs_P15,Table 3,does not automatically replace P15
+P10 noninferiority status,True,results_final/clinical_implementation/P12_P10_TrueTraining_Noninferiority_Assessment.csv,whether_noninferior_to_P15,Table 3,candidate status only
+P15 12h lab freshness eICU AUROC/AUPRC/slope,0.7847 / 0.1674 / 0.9779,results_final/clinical_implementation/Lab_Freshness_Model_Performance.csv,scenario=lab12h_freshness_window,Table 4 / Supplement,"borderline acceptable, not fully noninferior"
+P15 24h lab freshness eICU AUROC/AUPRC/slope,0.8085 / 0.1860 / 0.9991,results_final/clinical_implementation/Lab_Freshness_Model_Performance.csv,scenario=lab24h_freshness_window,Table 4 / Supplement,largely stable
+latest_value interpretation,latest-available / capped carry-forward,FINAL_PROJECT_SUMMARY.md,Laboratory freshness,Methods / Limitations,not hourly laboratory measurement
+shared support-intensity proxy,not full VIS,README.md,Laboratory freshness and proxy interpretation,Methods / Limitations,do not conflate with full VIS
+DCA/lead-time role,"supplementary clinical utility estimate, not automatic intervention trigger",README.md,Laboratory freshness and proxy interpretation,Discussion / Supplement,not direct treatment recommendation
