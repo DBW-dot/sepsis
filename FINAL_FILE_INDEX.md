@@ -53,3 +53,10 @@
 - `results_final/clinical_implementation/P12_P10_TrueTraining_PI_Summary_zh.md`
 - `results_final/clinical_implementation/P12_P10_P15_Performance_Comparison.csv`
 - `results_final/clinical_implementation/P12_P10_P15_Calibration_Comparison.csv`
+
+## Lab freshness and carry-forward sensitivity
+
+- `results_final/clinical_implementation/Lab_Freshness_Sensitivity_Report.md`
+- `results_final/clinical_implementation/Lab_Freshness_Model_Performance.csv`
+- `results_final/clinical_implementation/Lab_Freshness_Noninferiority_Assessment.csv`
+- `results_final/clinical_implementation/Lab_Availability_Lookahead_Audit.md`

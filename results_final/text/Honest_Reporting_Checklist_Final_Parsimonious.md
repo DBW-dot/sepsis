@@ -24,3 +24,12 @@
 - P10 noninferiority status vs frozen P15: `True`; recommended role: `validated_ultra_minimal_sensitivity_candidate_but_not_main_model`.
 - P15 remains the final manuscript-facing model unless explicitly re-frozen after PI decision.
 - P12/P10 DCA and strict 24h first-alarm outputs are supplementary implementation analyses and must not be framed as automatic intervention triggers.
+
+## Lab Freshness and Carry-forward Sensitivity
+
+- Laboratory variables are not assumed to be measured hourly.
+- Lab latest values should be interpreted as most recent available values within a defined freshness window.
+- Lab freshness sensitivity was conducted to assess deployment realism.
+- No laboratory value after the prediction time was used.
+- If result availability time is unavailable, chart/sample time was used as a conservative approximation and reported as a limitation.
+- Support-intensity proxy may include laboratory-dependent components and requires freshness auditing.
