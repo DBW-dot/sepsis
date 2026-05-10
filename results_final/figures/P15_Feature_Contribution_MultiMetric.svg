@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="620" viewBox="0 0 1180 620">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="24" y="34" font-family="Georgia, serif" font-size="21" fill="#1f2933">P15 feature contribution sensitivity</text>
+<text x="24" y="58" font-family="Arial, sans-serif" font-size="12" fill="#52616b">Estimated loss if removed from P15; simulation only, no retraining.</text>
+<text x="24" y="97" font-family="Arial, sans-serif" font-size="12" fill="#243447">shared_support_intensity_proxy</text>
+<rect x="330" y="78" width="73" height="7" rx="3" fill="#496f5d"/>
+<text x="411" y="85" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0075</text>
+<rect x="330" y="87" width="137" height="7" rx="3" fill="#2f7da1"/>
+<text x="475" y="94" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0140</text>
+<rect x="330" y="96" width="540" height="7" rx="3" fill="#9a463d"/>
+<text x="878" y="103" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0550</text>
+<text x="24" y="133" font-family="Arial, sans-serif" font-size="12" fill="#243447">spo2_latest_value</text>
+<rect x="330" y="114" width="58" height="7" rx="3" fill="#496f5d"/>
+<text x="396" y="121" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0060</text>
+<rect x="330" y="123" width="117" height="7" rx="3" fill="#2f7da1"/>
+<text x="455" y="130" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0120</text>
+<rect x="330" y="132" width="343" height="7" rx="3" fill="#9a463d"/>
+<text x="681" y="139" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0350</text>
+<text x="24" y="169" font-family="Arial, sans-serif" font-size="12" fill="#243447">hours_from_anchor</text>
+<rect x="330" y="150" width="63" height="7" rx="3" fill="#496f5d"/>
+<text x="401" y="157" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0065</text>
+<rect x="330" y="159" width="88" height="7" rx="3" fill="#2f7da1"/>
+<text x="426" y="166" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0090</text>
+<rect x="330" y="168" width="294" height="7" rx="3" fill="#9a463d"/>
+<text x="632" y="175" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0300</text>
+<text x="24" y="205" font-family="Arial, sans-serif" font-size="12" fill="#243447">bun_latest_value</text>
+<rect x="330" y="186" width="44" height="7" rx="3" fill="#496f5d"/>
+<text x="382" y="193" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0045</text>
+<rect x="330" y="195" width="68" height="7" rx="3" fill="#2f7da1"/>
+<text x="406" y="202" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0070</text>
+<rect x="330" y="204" width="196" height="7" rx="3" fill="#9a463d"/>
+<text x="534" y="211" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0200</text>
+<text x="24" y="241" font-family="Arial, sans-serif" font-size="12" fill="#243447">support_hemodynamic_component</text>
+<rect x="330" y="222" width="39" height="7" rx="3" fill="#496f5d"/>
+<text x="377" y="229" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0040</text>
+<rect x="330" y="231" width="63" height="7" rx="3" fill="#2f7da1"/>
+<text x="401" y="238" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0065</text>
+<rect x="330" y="240" width="245" height="7" rx="3" fill="#9a463d"/>
+<text x="583" y="247" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0250</text>
+<text x="24" y="277" font-family="Arial, sans-serif" font-size="12" fill="#243447">support_lactate_component</text>
+<rect x="330" y="258" width="34" height="7" rx="3" fill="#496f5d"/>
+<text x="372" y="265" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0035</text>
+<rect x="330" y="267" width="58" height="7" rx="3" fill="#2f7da1"/>
+<text x="396" y="274" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0060</text>
+<rect x="330" y="276" width="196" height="7" rx="3" fill="#9a463d"/>
+<text x="534" y="283" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0200</text>
+<text x="24" y="313" font-family="Arial, sans-serif" font-size="12" fill="#243447">heart_rate_latest_value</text>
+<rect x="330" y="294" width="37" height="7" rx="3" fill="#496f5d"/>
+<text x="375" y="301" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0038</text>
+<rect x="330" y="303" width="53" height="7" rx="3" fill="#2f7da1"/>
+<text x="391" y="310" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0055</text>
+<rect x="330" y="312" width="147" height="7" rx="3" fill="#9a463d"/>
+<text x="485" y="319" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0150</text>
+<text x="24" y="349" font-family="Arial, sans-serif" font-size="12" fill="#243447">hours_since_icu_admission</text>
+<rect x="330" y="330" width="39" height="7" rx="3" fill="#496f5d"/>
+<text x="377" y="337" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0040</text>
+<rect x="330" y="339" width="53" height="7" rx="3" fill="#2f7da1"/>
+<text x="391" y="346" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0055</text>
+<rect x="330" y="348" width="196" height="7" rx="3" fill="#9a463d"/>
+<text x="534" y="355" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0200</text>
+<text x="24" y="385" font-family="Arial, sans-serif" font-size="12" fill="#243447">platelet_latest_value</text>
+<rect x="330" y="366" width="31" height="7" rx="3" fill="#496f5d"/>
+<text x="369" y="373" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0032</text>
+<rect x="330" y="375" width="47" height="7" rx="3" fill="#2f7da1"/>
+<text x="385" y="382" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0048</text>
+<rect x="330" y="384" width="147" height="7" rx="3" fill="#9a463d"/>
+<text x="485" y="391" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0150</text>
+<text x="24" y="421" font-family="Arial, sans-serif" font-size="12" fill="#243447">respiratory_rate_latest_value</text>
+<rect x="330" y="402" width="29" height="7" rx="3" fill="#496f5d"/>
+<text x="367" y="409" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0030</text>
+<rect x="330" y="411" width="44" height="7" rx="3" fill="#2f7da1"/>
+<text x="382" y="418" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0045</text>
+<rect x="330" y="420" width="147" height="7" rx="3" fill="#9a463d"/>
+<text x="485" y="427" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0150</text>
+<text x="24" y="457" font-family="Arial, sans-serif" font-size="12" fill="#243447">is_sepsis_on_admission</text>
+<rect x="330" y="438" width="29" height="7" rx="3" fill="#496f5d"/>
+<text x="367" y="445" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0030</text>
+<rect x="330" y="447" width="39" height="7" rx="3" fill="#2f7da1"/>
+<text x="377" y="454" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0040</text>
+<rect x="330" y="456" width="147" height="7" rx="3" fill="#9a463d"/>
+<text x="485" y="463" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0150</text>
+<text x="24" y="493" font-family="Arial, sans-serif" font-size="12" fill="#243447">support_renal_component</text>
+<rect x="330" y="474" width="24" height="7" rx="3" fill="#496f5d"/>
+<text x="362" y="481" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0025</text>
+<rect x="330" y="483" width="39" height="7" rx="3" fill="#2f7da1"/>
+<text x="377" y="490" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0040</text>
+<rect x="330" y="492" width="147" height="7" rx="3" fill="#9a463d"/>
+<text x="485" y="499" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0150</text>
+<text x="24" y="529" font-family="Arial, sans-serif" font-size="12" fill="#243447">support_respiratory_component</text>
+<rect x="330" y="510" width="27" height="7" rx="3" fill="#496f5d"/>
+<text x="365" y="517" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0028</text>
+<rect x="330" y="519" width="39" height="7" rx="3" fill="#2f7da1"/>
+<text x="377" y="526" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0040</text>
+<rect x="330" y="528" width="147" height="7" rx="3" fill="#9a463d"/>
+<text x="485" y="535" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0150</text>
+<text x="24" y="565" font-family="Arial, sans-serif" font-size="12" fill="#243447">wbc_latest_value</text>
+<rect x="330" y="546" width="27" height="7" rx="3" fill="#496f5d"/>
+<text x="365" y="553" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0028</text>
+<rect x="330" y="555" width="34" height="7" rx="3" fill="#2f7da1"/>
+<text x="372" y="562" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0035</text>
+<rect x="330" y="564" width="98" height="7" rx="3" fill="#9a463d"/>
+<text x="436" y="571" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0100</text>
+<text x="24" y="601" font-family="Arial, sans-serif" font-size="12" fill="#243447">creatinine_latest_value</text>
+<rect x="330" y="582" width="19" height="7" rx="3" fill="#496f5d"/>
+<text x="357" y="589" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0020</text>
+<rect x="330" y="591" width="29" height="7" rx="3" fill="#2f7da1"/>
+<text x="367" y="598" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0030</text>
+<rect x="330" y="600" width="98" height="7" rx="3" fill="#9a463d"/>
+<text x="436" y="607" font-family="Arial, sans-serif" font-size="10" fill="#243447">0.0100</text>
+<rect x="910" y="81" width="14" height="14" fill="#496f5d"/>
+<text x="932" y="92" font-family="Arial, sans-serif" font-size="12" fill="#243447">AUROC loss</text>
+<rect x="910" y="105" width="14" height="14" fill="#2f7da1"/>
+<text x="932" y="116" font-family="Arial, sans-serif" font-size="12" fill="#243447">AUPRC loss</text>
+<rect x="910" y="129" width="14" height="14" fill="#9a463d"/>
+<text x="932" y="140" font-family="Arial, sans-serif" font-size="12" fill="#243447">Slope loss</text>
+</svg>

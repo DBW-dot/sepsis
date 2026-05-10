@@ -1,90 +1,158 @@
-﻿"relative_path","size_bytes","reason"
-"final_freeze\Final_Freeze_Audit_Summary.json","271","copied safe text artifact"
-"final_freeze\FINAL_MANUSCRIPT_HANDOFF_INDEX.md","2142","copied safe text artifact"
-"final_freeze\Final_Model_Role_Audit.md","873","copied safe text artifact"
-"final_freeze\FINAL_PI_SUMMARY.md","1509","copied safe text artifact"
-"final_freeze\Final_Table_Figure_Consistency_Audit.md","1533","copied safe text artifact"
-"final_freeze\Final_Table_Figure_Consistency_Detail.csv","14118","copied safe text artifact"
-"final_freeze\Old_Result_Replacement_Map.csv","2118","copied safe text artifact"
-"final_freeze\Old_Result_Replacement_Report.md","1195","copied safe text artifact"
-"final_freeze\Required_File_Inventory.csv","1930","copied safe text artifact"
-"final_freeze\run_final_freeze_audit.py","26487","copied safe text artifact"
-"metre_transport\METRE_Core_Feature_Registry.csv","45921","copied safe text artifact"
-"metre_transport\METRE_Core_Feature_Registry_Report.md","1073","copied safe text artifact"
-"metre_transport\METRE_Transport_Feature_Set.csv","12915","copied safe text artifact"
-"metre_transport\METRE_Transport_Final_Recommendation.md","1955","copied safe text artifact"
-"metre_transport\METRE_Transport_Model_Comparison.csv","2010","copied safe text artifact"
-"metre_transport\METRE_Transport_Model_Report.md","1750","copied safe text artifact"
-"metre_transport\METRE_vs_Original_Model_Comparison.csv","2846","copied safe text artifact"
-"metre_transport\Rich_Internal_Feature_Set.csv","34885","copied safe text artifact"
-"metre_transport\run_metre_transport_repair.py","41892","copied safe text artifact"
-"metre_transport\Shared_Support_Intensity_Proxy_Definition.md","1755","copied safe text artifact"
-"phenotype_reassessment\phenotype_calibration_stratification.csv","11736","copied safe text artifact"
-"phenotype_reassessment\phenotype_role_comparison.csv","9037","copied safe text artifact"
-"phenotype_reassessment\phenotype_role_report.md","6639","copied safe text artifact"
-"phenotype_reassessment\run_phenotype_role_reassessment.py","26963","copied safe text artifact"
-"post_metre_clinical_utility\Clinical_Utility_Model_Targets.md","1455","copied safe text artifact"
-"post_metre_clinical_utility\dca_threshold_sweep_post_metre.csv","8873","copied safe text artifact"
-"post_metre_clinical_utility\eventual_death_leadtime_summary.csv","4348","copied safe text artifact"
-"post_metre_clinical_utility\Post_METRE_Leadtime_DCA_Report.md","3584","copied safe text artifact"
-"post_metre_clinical_utility\run_post_metre_clinical_utility.py","18145","copied safe text artifact"
-"post_metre_clinical_utility\strict_24h_first_alarm_summary.csv","5387","copied safe text artifact"
-"post_metre_component_reassessment\component_ablation_results.csv","21152","copied safe text artifact"
-"post_metre_component_reassessment\component_subgroup_results.csv","28741","copied safe text artifact"
-"post_metre_component_reassessment\Post_METRE_Component_Reassessment_Report.md","4783","copied safe text artifact"
-"post_metre_component_reassessment\run_post_metre_component_reassessment.py","37472","copied safe text artifact"
-"post_metre_recalibration\eicu_recalibration_split_report.md","1099","copied safe text artifact"
-"post_metre_recalibration\Post_METRE_Calibration_Curve_Data.csv","14125","copied safe text artifact"
-"post_metre_recalibration\Post_METRE_Recalibration_Report.md","1495","copied safe text artifact"
-"post_metre_recalibration\Post_METRE_Recalibration_Results.csv","9034","copied safe text artifact"
-"post_metre_recalibration\Recalibrated_Model_Signoff.md","900","copied safe text artifact"
-"post_metre_recalibration\recalibration_methods_summary.md","794","copied safe text artifact"
-"post_metre_recalibration\Recalibration_Targets.md","817","copied safe text artifact"
-"post_metre_recalibration\run_post_metre_external_recalibration.py","26982","copied safe text artifact"
-"post_metre_selection\Downstream_Analysis_Model_Map.csv","1253","copied safe text artifact"
-"post_metre_selection\Model_Role_Assignment.csv","1358","copied safe text artifact"
-"post_metre_selection\Model_Selection_Criteria.md","1174","copied safe text artifact"
-"post_metre_selection\Post_METRE_Model_Comparison.csv","1959","copied safe text artifact"
-"post_metre_selection\Post_METRE_Model_Signoff_Report.md","5609","copied safe text artifact"
-"post_metre_selection\run_post_metre_model_selection.py","16002","copied safe text artifact"
-"recalibration\eicu_calibration_curve_data.csv","9396","copied safe text artifact"
-"recalibration\eicu_recalibration_report.md","3456","copied safe text artifact"
-"recalibration\eicu_recalibration_results.csv","5844","copied safe text artifact"
-"recalibration\eicu_recalibration_split_definition.md","1277","copied safe text artifact"
-"recalibration\run_external_recalibration.py","22000","copied safe text artifact"
-"results_package\figures\Figure1_workflow_notes.md","578","copied safe text artifact"
-"results_package\figures\Figure2_main_performance_data.csv","1717","copied safe text artifact"
-"results_package\figures\Figure3_dual_anchor_shap.csv","483","copied safe text artifact"
-"results_package\figures\Figure4_phenotype_shap.csv","440","copied safe text artifact"
-"results_package\figures\Figure5_dca_leadtime.csv","724","copied safe text artifact"
-"results_package\figures\Figure5_DCA_Leadtime_Post_METRE.csv","24980","copied safe text artifact"
-"results_package\figures\Figure6_external_failure_modes.csv","1353","copied safe text artifact"
-"results_package\figures\Figure6_External_Failure_Modes_Post_METRE.csv","1962","copied safe text artifact"
-"results_package\MANUSCRIPT_READY_INDEX.md","334","copied safe text artifact"
-"results_package\POST_METRE_RESULT_INDEX.md","1190","copied safe text artifact"
-"results_package\POST_METRE_RESULT_LINEAGE.csv","4489","copied safe text artifact"
-"results_package\supplementary\Supplementary_Index.md","524","copied safe text artifact"
-"results_package\tables\Table1_Cohort_Characteristics.csv","3443","copied safe text artifact"
-"results_package\tables\Table2_Main_Model_Comparators.csv","1717","copied safe text artifact"
-"results_package\tables\Table2_Main_Model_Comparators_Post_METRE.csv","4966","copied safe text artifact"
-"results_package\tables\Table3_Phenotype_Gain.csv","1062","copied safe text artifact"
-"results_package\tables\Table3_Phenotype_Gain_Post_METRE.csv","5012","copied safe text artifact"
-"results_package\tables\Table4_Measurement_Bias.csv","1450","copied safe text artifact"
-"results_package\tables\Table4_Measurement_Bias_Post_METRE.csv","2383","copied safe text artifact"
-"results_package\text\Discussion_Outline_en.md","271","copied safe text artifact"
-"results_package\text\Discussion_Outline_zh.md","880","copied safe text artifact"
-"results_package\text\Discussion_Outline_zh_Post_METRE.md","1896","copied safe text artifact"
-"results_package\text\Honest_Reporting_Checklist.md","464","copied safe text artifact"
-"results_package\text\Honest_Reporting_Checklist_Post_METRE.md","1421","copied safe text artifact"
-"results_package\text\PI_Decision_Summary.md","472","copied safe text artifact"
-"results_package\text\PI_Decision_Summary_Post_METRE.md","975","copied safe text artifact"
-"results_package\text\Post_METRE_Final_Project_Assessment.md","1339","copied safe text artifact"
-"results_package\text\Results_Skeleton_en.md","652","copied safe text artifact"
-"results_package\text\Results_Skeleton_zh.md","2199","copied safe text artifact"
-"results_package\text\Results_Skeleton_zh_Post_METRE.md","2455","copied safe text artifact"
-"results_package\update_post_metre_result_package.py","35535","copied safe text artifact"
-"step9_results_packaging\py\run_step9_results_packaging.py","26511","copied safe text artifact"
-"transport_model\run_transport_model_revision.py","24682","copied safe text artifact"
-"transport_model\Transport_Feature_Set.csv","14423","copied safe text artifact"
-"transport_model\Transport_Model_Comparison.csv","2244","copied safe text artifact"
-"transport_model\Transport_Model_Report.md","5797","copied safe text artifact"
+relative_path,size_bytes,reason
+final_freeze\Final_Freeze_Audit_Summary.json,271,copied_or_updated
+final_freeze\FINAL_MANUSCRIPT_HANDOFF_INDEX.md,2142,copied_or_updated
+final_freeze\Final_Model_Role_Assignment_Parsimonious.csv,1239,copied_or_updated
+final_freeze\Final_Model_Role_Audit.md,873,copied_or_updated
+final_freeze\Final_Model_Role_Audit_Parsimonious.md,1070,copied_or_updated
+final_freeze\Final_Parsimonious_Integration_Audit.json,433,already_current
+final_freeze\FINAL_PI_SUMMARY.md,1509,copied_or_updated
+final_freeze\FINAL_PI_SUMMARY_PARSIMONIOUS.md,1827,copied_or_updated
+final_freeze\Final_Table_Figure_Consistency_Audit.md,1533,copied_or_updated
+final_freeze\Final_Table_Figure_Consistency_Detail.csv,14118,copied_or_updated
+final_freeze\Old_Result_Replacement_Map.csv,2118,copied_or_updated
+final_freeze\Old_Result_Replacement_Report.md,1195,copied_or_updated
+final_freeze\Required_File_Inventory.csv,1930,copied_or_updated
+final_freeze\run_final_freeze_audit.py,26487,copied_or_updated
+final_freeze\run_final_parsimonious_integration.py,18386,copied_or_updated
+metre_transport\METRE_Core_Feature_Registry.csv,45921,copied_or_updated
+metre_transport\METRE_Core_Feature_Registry_Report.md,1073,copied_or_updated
+metre_transport\METRE_Transport_Feature_Set.csv,12915,copied_or_updated
+metre_transport\METRE_Transport_Final_Recommendation.md,1955,copied_or_updated
+metre_transport\METRE_Transport_Model_Comparison.csv,2010,copied_or_updated
+metre_transport\METRE_Transport_Model_Report.md,1750,copied_or_updated
+metre_transport\METRE_vs_Original_Model_Comparison.csv,2846,copied_or_updated
+metre_transport\Rich_Internal_Feature_Set.csv,34885,copied_or_updated
+metre_transport\run_metre_transport_repair.py,41892,copied_or_updated
+metre_transport\Shared_Support_Intensity_Proxy_Definition.md,1755,copied_or_updated
+parsimonious_features\F15_minimal_bedside_set.csv,1785,copied_or_updated
+parsimonious_features\F25_clinical_core_set.csv,3065,copied_or_updated
+parsimonious_features\F40_balanced_transport_set.csv,4944,copied_or_updated
+parsimonious_features\Feature_Contribution_Estimates.csv,3103,already_current
+parsimonious_features\Feature_Implementability_Scorecard.csv,3914,already_current
+parsimonious_features\Feature_Retention_Rationale.csv,26536,already_current
+parsimonious_features\Feature_Retention_Report.md,559,already_current
+parsimonious_features\Feature_Set_Combination_Analysis.csv,3903,already_current
+parsimonious_features\Final_Parsimonious_Model_Recommendation.md,7803,already_current
+parsimonious_features\Manuscript_Update_Notes.md,580,copied_or_updated
+parsimonious_features\Noninferiority_Assessment.csv,1293,copied_or_updated
+parsimonious_features\P15_Clinical_Implementation_Priority_Ranking.csv,4461,already_current
+parsimonious_features\P15_Feature_Optimization_Clinical_Implementability_Report.md,4391,already_current
+parsimonious_features\P15_Feature_Retention_Rationale_Detailed.csv,6471,already_current
+parsimonious_features\P15_Feature_Subset_Sensitivity.csv,6471,already_current
+parsimonious_features\P15_Proxy_Component_Death_Risk_Contribution.csv,2519,copied_or_updated
+parsimonious_features\P15_Proxy_Contribution_Scenarios.csv,3702,already_current
+parsimonious_features\P15_Proxy_Dual_Index_Recommendation.csv,1658,already_current
+parsimonious_features\P15_Proxy_Merge_Scenarios.csv,1532,copied_or_updated
+parsimonious_features\P15_Subset_Combination_Performance.csv,3169,already_current
+parsimonious_features\P15_Subset_Finetuning_Clinical_Implementation_Report.md,6090,already_current
+parsimonious_features\P15_Subset_Finetuning_Recommendation.csv,1582,already_current
+parsimonious_features\P15_Subset_Sensitivity_and_Clinical_Landing_Report.md,9384,already_current
+parsimonious_features\P15_Subset_Sensitivity_Clinical_Landing_Report.md,7612,copied_or_updated
+parsimonious_features\Parsimonious_Model_Coefficient_Importance.csv,11994,copied_or_updated
+parsimonious_features\Parsimonious_Model_Comparison.csv,3327,copied_or_updated
+parsimonious_features\Parsimonious_Model_Report.md,687,copied_or_updated
+parsimonious_features\run_p15_subset_finetuning_recommendation.py,8215,copied_or_updated
+parsimonious_features\run_p15_subset_sensitivity_clinical_landing.py,31113,copied_or_updated
+parsimonious_features\run_p15_unified_sensitivity_package.py,20387,copied_or_updated
+parsimonious_features\run_parsimonious_feature_revision.py,35059,copied_or_updated
+parsimonious_features\run_summary.json,936,copied_or_updated
+parsimonious_features\Single_Feature_Removal_Sensitivity.csv,5189,already_current
+parsimonious_features\Support_Intensity_Proxy_Interpretability.csv,672,already_current
+phenotype_reassessment\phenotype_calibration_stratification.csv,11736,copied_or_updated
+phenotype_reassessment\phenotype_role_comparison.csv,9037,copied_or_updated
+phenotype_reassessment\phenotype_role_report.md,6639,copied_or_updated
+phenotype_reassessment\run_phenotype_role_reassessment.py,26963,copied_or_updated
+post_metre_clinical_utility\Clinical_Utility_Model_Targets.md,1455,copied_or_updated
+post_metre_clinical_utility\dca_threshold_sweep_post_metre.csv,8873,copied_or_updated
+post_metre_clinical_utility\eventual_death_leadtime_summary.csv,4348,copied_or_updated
+post_metre_clinical_utility\Post_METRE_Leadtime_DCA_Report.md,3584,copied_or_updated
+post_metre_clinical_utility\run_post_metre_clinical_utility.py,18145,copied_or_updated
+post_metre_clinical_utility\strict_24h_first_alarm_summary.csv,5387,copied_or_updated
+post_metre_component_reassessment\component_ablation_results.csv,21152,copied_or_updated
+post_metre_component_reassessment\component_subgroup_results.csv,28741,copied_or_updated
+post_metre_component_reassessment\Post_METRE_Component_Reassessment_Report.md,4783,copied_or_updated
+post_metre_component_reassessment\run_post_metre_component_reassessment.py,37472,copied_or_updated
+post_metre_recalibration\eicu_recalibration_split_report.md,1099,copied_or_updated
+post_metre_recalibration\Post_METRE_Calibration_Curve_Data.csv,14125,copied_or_updated
+post_metre_recalibration\Post_METRE_Recalibration_Report.md,1495,copied_or_updated
+post_metre_recalibration\Post_METRE_Recalibration_Results.csv,9034,copied_or_updated
+post_metre_recalibration\Recalibrated_Model_Signoff.md,900,copied_or_updated
+post_metre_recalibration\recalibration_methods_summary.md,794,copied_or_updated
+post_metre_recalibration\Recalibration_Targets.md,817,copied_or_updated
+post_metre_recalibration\run_post_metre_external_recalibration.py,26982,copied_or_updated
+post_metre_selection\Downstream_Analysis_Model_Map.csv,1253,copied_or_updated
+post_metre_selection\Model_Role_Assignment.csv,1358,copied_or_updated
+post_metre_selection\Model_Selection_Criteria.md,1174,copied_or_updated
+post_metre_selection\Post_METRE_Model_Comparison.csv,1959,copied_or_updated
+post_metre_selection\Post_METRE_Model_Signoff_Report.md,5609,copied_or_updated
+post_metre_selection\run_post_metre_model_selection.py,16002,copied_or_updated
+recalibration\eicu_calibration_curve_data.csv,9396,copied_or_updated
+recalibration\eicu_recalibration_report.md,3456,copied_or_updated
+recalibration\eicu_recalibration_results.csv,5844,copied_or_updated
+recalibration\eicu_recalibration_split_definition.md,1277,copied_or_updated
+recalibration\run_external_recalibration.py,22000,copied_or_updated
+results_package\MANUSCRIPT_READY_INDEX.md,334,copied_or_updated
+results_package\POST_METRE_RESULT_INDEX.md,1190,copied_or_updated
+results_package\POST_METRE_RESULT_LINEAGE.csv,4489,copied_or_updated
+results_package\update_post_metre_result_package.py,35535,copied_or_updated
+transport_model\run_transport_model_revision.py,24682,copied_or_updated
+transport_model\Transport_Feature_Set.csv,14423,copied_or_updated
+transport_model\Transport_Model_Comparison.csv,2244,copied_or_updated
+transport_model\Transport_Model_Report.md,5797,copied_or_updated
+step9_results_packaging\py\run_step9_results_packaging.py,26511,copied_or_updated
+results_package\figures\Figure1_workflow_notes.md,578,copied_or_updated
+results_package\figures\Figure2_main_performance_data.csv,1717,copied_or_updated
+results_package\figures\Figure3_dual_anchor_shap.csv,483,copied_or_updated
+results_package\figures\Figure4_phenotype_shap.csv,440,copied_or_updated
+results_package\figures\Figure5_dca_leadtime.csv,724,copied_or_updated
+results_package\figures\Figure5_DCA_Leadtime_Post_METRE.csv,24980,copied_or_updated
+results_package\figures\Figure6_external_failure_modes.csv,1353,copied_or_updated
+results_package\figures\Figure6_External_Failure_Modes_Post_METRE.csv,1962,copied_or_updated
+results_package\supplementary\Supplementary_Index.md,524,already_current
+results_package\tables\Table1_Cohort_Characteristics.csv,3443,already_current
+results_package\tables\Table2_Main_Model_Comparators.csv,1717,copied_or_updated
+results_package\tables\Table2_Main_Model_Comparators_Final_Parsimonious.csv,1930,copied_or_updated
+results_package\tables\Table2_Main_Model_Comparators_Post_METRE.csv,4966,copied_or_updated
+results_package\tables\Table3_Phenotype_Gain.csv,1062,copied_or_updated
+results_package\tables\Table3_Phenotype_Gain_Post_METRE.csv,5012,copied_or_updated
+results_package\tables\Table4_Measurement_Bias.csv,1450,copied_or_updated
+results_package\tables\Table4_Measurement_Bias_Post_METRE.csv,2383,copied_or_updated
+results_package\tables\Table_Parsimonious_Feature_Set_Comparison.csv,1093,copied_or_updated
+results_package\text\Discussion_Outline_en.md,271,copied_or_updated
+results_package\text\Discussion_Outline_zh.md,880,copied_or_updated
+results_package\text\Discussion_Outline_zh_Final_Parsimonious.md,1233,copied_or_updated
+results_package\text\Discussion_Outline_zh_Post_METRE.md,1896,copied_or_updated
+results_package\text\Honest_Reporting_Checklist.md,464,copied_or_updated
+results_package\text\Honest_Reporting_Checklist_Final_Parsimonious.md,890,copied_or_updated
+results_package\text\Honest_Reporting_Checklist_Post_METRE.md,1421,copied_or_updated
+results_package\text\PI_Decision_Summary.md,472,copied_or_updated
+results_package\text\PI_Decision_Summary_Post_METRE.md,975,copied_or_updated
+results_package\text\Post_METRE_Final_Project_Assessment.md,1339,copied_or_updated
+results_package\text\Results_Skeleton_en.md,652,copied_or_updated
+results_package\text\Results_Skeleton_zh.md,2199,copied_or_updated
+results_package\text\Results_Skeleton_zh_Final_Parsimonious.md,1132,copied_or_updated
+results_package\text\Results_Skeleton_zh_Post_METRE.md,2455,copied_or_updated
+results_final\figures\P15_Feature_Contribution_AllMetrics.png,151734,already_current
+results_final\figures\P15_Feature_Contribution_AllMetrics.svg,77072,already_current
+results_final\figures\P15_Feature_Contribution_MultiMetric.csv,4170,copied_or_updated
+results_final\figures\P15_Feature_Contribution_MultiMetric.svg,10220,copied_or_updated
+results_final\figures\P15_Proxy_Component_Death_Risk_Contribution.csv,2519,copied_or_updated
+results_final\figures\P15_Proxy_Component_Death_Risk_Contribution.svg,3187,copied_or_updated
+results_final\figures\P15_Proxy_Contribution_Interpretability.csv,1532,copied_or_updated
+results_final\figures\P15_Proxy_Contribution_Interpretability.png,90810,already_current
+results_final\figures\P15_Proxy_Contribution_Interpretability.svg,51524,already_current
+results_final\figures\P15_Proxy_Contribution_Stacked.png,90283,already_current
+results_final\figures\P15_Proxy_Contribution_Stacked.svg,50550,already_current
+results_final\figures\P15_Subset_Performance_Comparison.csv,2665,copied_or_updated
+results_final\figures\P15_Subset_Performance_Comparison.png,124929,already_current
+results_final\figures\P15_Subset_Performance_Comparison.svg,50930,already_current
+results_final\figures\Parsimonious_Feature_Contribution_Bar.csv,3103,already_current
+results_final\figures\Parsimonious_Feature_Contribution_Bar.svg,4664,already_current
+results_final\figures\Parsimonious_Feature_Contribution_MultiMetric.svg,7114,already_current
+results_final\figures\Parsimonious_Feature_Set_Performance_Comparison.csv,3199,already_current
+results_final\figures\Parsimonious_Feature_Set_Performance_Comparison.svg,3554,already_current
+results_final\figures\Support_Intensity_Proxy_Interpretability.csv,672,already_current
+results_final\figures\Support_Intensity_Proxy_Interpretability.svg,2184,already_current
+results_final\tables\Table_P15_Subset_Finetuning_Recommendation.csv,1582,copied_or_updated
+results_final\tables\Table_P15_Subset_Sensitivity_Clinical_Landing.csv,3169,copied_or_updated
+results_final\tables\Table_Parsimonious_Feature_Set_Comparison.csv,3903,already_current

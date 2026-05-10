@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-05-03T11:52:54",
+  "root": "D:\\try",
+  "train_rows": 313496,
+  "validation_rows": 79518,
+  "mimic_internal_rows": 1030526,
+  "eicu_external_rows": 1051357,
+  "trained_models": [
+    "P15_minimal_bedside_model",
+    "P25_clinical_core_model",
+    "P40_balanced_transport_model",
+    "MT3_full_transport_set"
+  ],
+  "recommendation": {
+    "recommended_feature_set": "F15_minimal_bedside_set",
+    "recommended_model_name": "P15_minimal_bedside_model",
+    "feature_count": 15,
+    "auprc_drop_vs_mt3_pct": -0.015369918621394755,
+    "replace_mt3_as_main": true,
+    "reason": "accepted by noninferiority thresholds with the smallest feature count"
+  },
+  "forbidden_changes": {
+    "modified_step1_to_6": false,
+    "used_eicu_for_training": false,
+    "used_phenotype_default_input": false,
+    "used_measurement_intensity": false,
+    "used_full_vis_external_transport": false
+  }
+}

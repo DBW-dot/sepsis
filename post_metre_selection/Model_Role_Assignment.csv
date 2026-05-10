@@ -1,0 +1,8 @@
+﻿model_name,display_model_name,assigned_role,selected_as_best_internal_rich,selected_as_external_transport,selected_as_baseline_comparator,rationale
+M1_original_rich,M1_main_competing_risk,Internal rich model,1,0,0,Highest MIMIC internal performance but poor eICU transport and calibration; use as internal rich/reference model.
+C1_dynamic_SOFA,C1_dynamic_SOFA_only,Clinical score comparator,0,0,1,Prespecified dynamic SOFA-only clinical comparator.
+C3_no_phenotype,C3_no_phenotype,Sensitivity model,0,0,0,No-phenotype sensitivity model for phenotype role audits.
+MT1_physiology_only,MT1_physiology_only,Sensitivity model,0,0,0,Minimal METRE physiology transport baseline; useful for support proxy contribution analysis.
+MT2_physiology_minimal_recency,MT2_physiology_minimal_recency,Discarded / not recommended,0,0,0,"Minimal recency improved AUROC over MT1 but reduced AUPRC and calibration slope, so it is not the frozen transport model."
+MT3_physiology_support_proxy,MT3_physiology_support_proxy,External transport model,0,1,0,Best default METRE transport model by eICU AUPRC/AUROC with strong calibration and no direct phenotype input.
+MT4_support_proxy_phenotype_sensitivity,MT4_support_proxy_phenotype_sensitivity,Sensitivity model,0,0,0,Phenotype sensitivity model; not default because phenotype gain remains limited and AUPRC is below MT3.

@@ -1,0 +1,10 @@
+{
+  "required_files_ok": true,
+  "model_roles_consistent": true,
+  "table_numeric_consistent": true,
+  "figure5_consistent": true,
+  "figure6_consistent": true,
+  "old_result_replacement_map_rows": 5,
+  "handoff_index_exists": true,
+  "pi_summary_exists": true
+}

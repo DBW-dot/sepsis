@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="460" viewBox="0 0 1120 460">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="24" y="34" font-family="Georgia, serif" font-size="21" fill="#1f2933">Proxy component contribution to death risk</text>
+<text x="24" y="58" font-family="Arial, sans-serif" font-size="12" fill="#52616b">Frozen P15 death-class coefficient plus simulated removal impact; no refit.</text>
+<text x="24" y="103" font-family="Arial, sans-serif" font-size="12" fill="#243447">Shared support-intensity composite</text>
+<rect x="320" y="86" width="430" height="13" rx="4" fill="#9a463d"/>
+<text x="758" y="97" font-family="Arial, sans-serif" font-size="10" fill="#243447">coef 0.211</text>
+<rect x="320" y="107" width="430" height="13" rx="4" fill="#2f7da1"/>
+<text x="758" y="118" font-family="Arial, sans-serif" font-size="10" fill="#243447">AUPRC loss 0.0140</text>
+<text x="24" y="157" font-family="Arial, sans-serif" font-size="12" fill="#243447">Hemodynamic support component</text>
+<rect x="320" y="140" width="395" height="13" rx="4" fill="#9a463d"/>
+<text x="723" y="151" font-family="Arial, sans-serif" font-size="10" fill="#243447">coef 0.194</text>
+<rect x="320" y="161" width="199" height="13" rx="4" fill="#2f7da1"/>
+<text x="527" y="172" font-family="Arial, sans-serif" font-size="10" fill="#243447">AUPRC loss 0.0065</text>
+<text x="24" y="211" font-family="Arial, sans-serif" font-size="12" fill="#243447">Lactate/perfusion component</text>
+<rect x="320" y="194" width="413" height="13" rx="4" fill="#9a463d"/>
+<text x="741" y="205" font-family="Arial, sans-serif" font-size="10" fill="#243447">coef 0.203</text>
+<rect x="320" y="215" width="184" height="13" rx="4" fill="#2f7da1"/>
+<text x="512" y="226" font-family="Arial, sans-serif" font-size="10" fill="#243447">AUPRC loss 0.0060</text>
+<text x="24" y="265" font-family="Arial, sans-serif" font-size="12" fill="#243447">Renal support component</text>
+<rect x="320" y="248" width="79" height="13" rx="4" fill="#9a463d"/>
+<text x="407" y="259" font-family="Arial, sans-serif" font-size="10" fill="#243447">coef 0.039</text>
+<rect x="320" y="269" width="122" height="13" rx="4" fill="#2f7da1"/>
+<text x="450" y="280" font-family="Arial, sans-serif" font-size="10" fill="#243447">AUPRC loss 0.0040</text>
+<text x="24" y="319" font-family="Arial, sans-serif" font-size="12" fill="#243447">Respiratory support component</text>
+<rect x="320" y="302" width="186" height="13" rx="4" fill="#9a463d"/>
+<text x="514" y="313" font-family="Arial, sans-serif" font-size="10" fill="#243447">coef 0.092</text>
+<rect x="320" y="323" width="122" height="13" rx="4" fill="#2f7da1"/>
+<text x="450" y="334" font-family="Arial, sans-serif" font-size="10" fill="#243447">AUPRC loss 0.0040</text>
+<rect x="840" y="91" width="14" height="14" fill="#9a463d"/>
+<text x="862" y="103" font-family="Arial, sans-serif" font-size="12" fill="#243447">P15 death-class coefficient</text>
+<rect x="840" y="119" width="14" height="14" fill="#2f7da1"/>
+<text x="862" y="131" font-family="Arial, sans-serif" font-size="12" fill="#243447">Estimated AUPRC loss if removed</text>
+</svg>
