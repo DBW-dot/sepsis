@@ -1,62 +1,33 @@
-# Sepsis Dynamic Competing-risk Final Parsimonious Manuscript Repository
+# Sepsis Dynamic Competing-risk Prediction Final Share Repository
 
-## Project title
-
-Dynamic competing-risk prediction for ICU sepsis deterioration with a clinically parsimonious transport model.
-
-## Current frozen conclusion
-
-The final manuscript-facing model is `P15_clinically_parsimonious_transport_model`, using the legacy/internal alias `P15_minimal_bedside_model`. It is a 15-feature clinically parsimonious transport model, not an all-bedside manual score. It includes time anchors, routine vital signs, routine laboratory values, and a shared support-intensity proxy. MT3 remains the Post-METRE transport reference, while P15 is the final clinically parsimonious model.
-
-## Clinical implementation addendum
-
-The repository now includes an implementation-focused analysis of P15, P12, and P10:
-
-- P15 remains the formal main result model.
-- P12 is a clinical simplification candidate, labelled as simulated sensitivity / simulated implementation estimate.
-- P10 is an ultra-minimal sensitivity scenario, labelled as simulated sensitivity only.
-- The proxy communication recommendation is `shared_support_intensity_proxy + support_lactate_component`.
-- P12 and P10 do not replace P15 and are not newly trained models.
-
-Start with:
-
-1. `results_final/clinical_implementation/P15_Subset_Finetuning_Clinical_Implementation_Report.md`
-2. `results_final/tables/Table_P15_P12_P10_Clinical_Implementation_Summary.csv`
-3. `results_final/text/Clinical_Implementation_Notes_zh_Final.md`
-4. `final_freeze/Final_Clinical_Implementation_Audit.md`
+This repository is the GitHub-facing, safe-share result layer for the ICU sepsis 24-hour dynamic competing-risk prediction project. It excludes raw clinical databases and heavy row-level artifacts.
 
 ## Final model roles
 
-- `M1_original_rich` / display name `M1_internal_rich_reference_model` = internal rich/reference model
-- `MT3_physiology_support_proxy` / display name `MT3_Post_METRE_transport_reference_model` = Post-METRE transport reference
-- `P15_minimal_bedside_model` / display name `P15_clinically_parsimonious_transport_model` = final clinically parsimonious transport model
-- `P12_balanced_transport_set` = clinical implementation simplification candidate, simulated only
-- `P10_ultra_minimal_transport_set` = ultra-minimal sensitivity scenario, simulated only
-- `P25_clinical_core_model` and `P40_balanced_transport_model` = sensitivity models
-- `C1_dynamic_SOFA` = clinical comparator
-- `phenotype` = early static phenotype for stratification / explanation / calibration audit only
+- `P15_clinically_parsimonious_transport_model` is the only formal manuscript-facing main model. It is an EHR-implementable clinically parsimonious transport model, not a bedside-only model and not a manual score.
+- `P12_true_trained_clinical_landing_model` is a validated simplified implementation candidate after true MIMIC-only training and eICU external validation. It does not replace P15.
+- `P10_true_trained_ultra_minimal_sensitivity_model` is a validated ultra-minimal sensitivity candidate after true MIMIC-only training and eICU external validation. It does not replace P15.
+- `MT3_Post_METRE_transport_reference_model` is a Post-METRE transport reference model, not the final model.
+- `M1_internal_rich_reference_model` is an internal rich/reference model, not the external transport model.
 
-## Key final metrics
+## Frozen P15 external performance
 
-- P15 feature count = 15
-- P15 eICU external AUROC/AUPRC/calibration slope = 0.8103 / 0.1892 / 1.0031
-- P12 and P10 metrics are simulated sensitivity estimates, not retrained model results.
+- eICU AUROC: 0.8103
+- eICU AUPRC: 0.1892
+- eICU calibration slope: 1.0031
 
-## What is included in this repo
+## Laboratory freshness and proxy interpretation
 
-- Final manuscript-facing tables and text in `results_final/`
-- Clinical implementation package in `results_final/clinical_implementation/`
-- Backward-compatible final outputs in `results_package/`
-- Final model role freeze documents in `final_freeze/`
-- Parsimonious feature-set audit outputs in `parsimonious_features/`
-- Cleanup and naming harmonisation reports in `cleanup/`
-- Historical audit material in `archive/`
-- Heavy artifact index in `HEAVY_ARTIFACT_MANIFEST.csv`
+- Laboratory variables are latest-available / capped carry-forward values, not hourly real laboratory measurements.
+- The 12h laboratory freshness sensitivity result is borderline acceptable, not fully noninferior.
+- The 24h laboratory freshness sensitivity result is largely stable.
+- No additional look-ahead was identified under the available timestamp structure, but result availability time is incomplete; chart/sample time was used as a conservative approximation and should be reported as a limitation.
+- The shared support-intensity proxy is a cross-database support burden proxy, not full VIS. Full VIS was not used as the external transport input.
+- DCA and lead-time outputs are supplementary clinical utility estimates for risk stratification or monitoring-escalation discussion, not automatic intervention triggers.
 
-## What is excluded and why
+## Start here
 
-Raw MIMIC-IV/eICU data, parquet datasets, model binaries, DuckDB databases, compressed raw files, and runtime logs are excluded. This repository is a lightweight manuscript-facing share layer, not a full local computational archive.
-
-## Warning
-
-Do not use archived pre-METRE outputs, old Step8/Step9 outputs, old lead-time/DCA interfaces, or historical phenotype-gain files as final results. Do not describe P15 as an all-bedside or manually calculated score; do not describe P12 as the formal main model; do not use phenotype as a default performance driver; and do not conflate full VIS with the shared support-intensity proxy.
+1. `FINAL_PROJECT_SUMMARY.md`
+2. `FINAL_FILE_INDEX.md`
+3. `final_freeze/FINAL_PI_SUMMARY_PARSIMONIOUS.md`
+4. `cleanup/Final_Repository_Consistency_Report.md`

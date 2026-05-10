@@ -1,26 +1,18 @@
-# Final Model Role Audit - Parsimonious Integration
+# Final Model Role Audit - Parsimonious Freeze
 
-## Verdict
+## Role assignment
 
-Final parsimonious model role consistency: `PASS`.
+- `P15_clinically_parsimonious_transport_model`: final manuscript-facing model and only formal main model.
+- `P12_true_trained_clinical_landing_model`: validated simplified implementation candidate; does not replace P15.
+- `P10_true_trained_ultra_minimal_sensitivity_model`: validated ultra-minimal sensitivity candidate; does not replace P15.
+- `MT3_Post_METRE_transport_reference_model`: Post-METRE transport reference model; not final model.
+- `M1_internal_rich_reference_model`: internal rich/reference model; not external transport model.
 
-## Frozen roles
+## Guardrails
 
-| Model or object | Frozen role |
-|---|---|
-| M1_original_rich | internal rich/reference model |
-| MT3_physiology_support_proxy | Post-METRE transport reference model |
-| P15_minimal_bedside_model | final clinically parsimonious transport model |
-| P25_clinical_core_model | sensitivity model |
-| P40_balanced_transport_model | sensitivity model |
-| C1_dynamic_SOFA | clinical comparator |
-| phenotype | stratification / explanation / calibration audit tool |
+- P15 is EHR-implementable, not bedside-only and not a manual score.
+- The shared support-intensity proxy is not full VIS.
+- Laboratory features are latest-available carry-forward variables, not hourly real laboratory measurements.
+- DCA and lead-time analyses are supplementary utility estimates, not automatic intervention triggers.
 
-## Guardrails verified
-
-- No model was retrained in this integration step.
-- Cohort, Step 1-6 artifacts, dual-anchor logic, Sepsis-3 suspected infection definition, and 24h competing-risk labels were not modified.
-- eICU remains external validation only.
-- Phenotype is not restored as a default transport input.
-- Full VIS is not used as an external transport input.
-- Measurement-process variables are not restored into the final transport model.
+Conclusion: model roles are internally consistent for final manuscript writing.

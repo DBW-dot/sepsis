@@ -1,35 +1,17 @@
-# Honest Reporting Checklist - Final Parsimonious
+# Honest Reporting Checklist - Final Parsimonious Model
 
-- `P15_clinically_parsimonious_transport_model` is the final manuscript-facing model.
-- `P15_minimal_bedside_model` is retained only as a legacy/internal alias.
+- `P15_clinically_parsimonious_transport_model` is the only formal manuscript-facing main model.
+- `P12_true_trained_clinical_landing_model` is a true-trained validated simplified implementation candidate, not the final model and not a replacement for P15.
+- `P10_true_trained_ultra_minimal_sensitivity_model` is a true-trained validated ultra-minimal sensitivity candidate, not the final model and not a replacement for P15.
 - P15 is EHR-implementable but not a bedside-only manual score.
-- P15 includes time anchors, routine vital signs, routine laboratory variables, and shared support-intensity proxy variables.
-- P12 and P10 are implementation sensitivity estimates, not validated replacement models.
-- P12 is a clinical simplification candidate, not the formal main model.
-- P10 is an ultra-minimal sensitivity scenario, not the formal main model.
-- shared support-intensity proxy should be explained as a cross-database support burden proxy, not full VIS.
-- Proxy components require clear clinical interpretation before deployment.
-- Clinical implementation still requires local EHR mapping and prospective validation.
-- MT3 remains the Post-METRE transport reference, not the final clinical model.
-- M1 remains an internal rich/reference model, not the external transport model.
-- Phenotype is a stratification / explanation / calibration audit tool, not a default performance driver.
-- DCA and lead-time outputs should be framed as risk stratification evidence, not automatic intervention triggers.
-- Strict 24h first-alarm lead-time and exploratory eventual-death lead-time must be described separately.
-- Do not hide unfavorable sensitivity results, including weaker calibration or AUPRC drops in non-final feature sets.
-
-## P12/P10 True-Training Validation
-
-- P12/P10 have now moved from simulated sensitivity estimates into true-training validation using MIMIC train only and eICU external validation only.
-- P12 noninferiority status vs frozen P15: `True`; recommended role: `validated_simplified_implementation_candidate`.
-- P10 noninferiority status vs frozen P15: `True`; recommended role: `validated_ultra_minimal_sensitivity_candidate_but_not_main_model`.
-- P15 remains the final manuscript-facing model unless explicitly re-frozen after PI decision.
-- P12/P10 DCA and strict 24h first-alarm outputs are supplementary implementation analyses and must not be framed as automatic intervention triggers.
-
-## Lab Freshness and Carry-forward Sensitivity
-
 - Laboratory variables are not assumed to be measured hourly.
-- Lab latest values should be interpreted as most recent available values within a defined freshness window.
-- Lab freshness sensitivity was conducted to assess deployment realism.
+- Laboratory latest values should be interpreted as most recent available values under capped carry-forward rules.
+- The 12h laboratory freshness sensitivity is borderline acceptable, not fully noninferior.
+- The 24h laboratory freshness sensitivity is largely stable.
 - No laboratory value after the prediction time was used.
-- If result availability time is unavailable, chart/sample time was used as a conservative approximation and reported as a limitation.
-- Support-intensity proxy may include laboratory-dependent components and requires freshness auditing.
+- Result availability time is incomplete; chart/sample time was used as a conservative approximation and should be reported as a limitation.
+- The shared support-intensity proxy is a cross-database support burden proxy, not full VIS.
+- Proxy components require clear clinical interpretation before deployment.
+- Full VIS was not used as the external transport input.
+- DCA and lead-time results are supplementary clinical utility estimates, not automatic intervention triggers or direct treatment recommendations.
+- Clinical implementation still requires local EHR mapping and prospective validation.

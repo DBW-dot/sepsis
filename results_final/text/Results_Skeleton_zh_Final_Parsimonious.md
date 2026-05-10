@@ -1,13 +1,17 @@
-# Results Skeleton zh - Final Parsimonious
+# Results Skeleton - Final Parsimonious Version
 
-## 主要模型和临床精简特征集
+## 队列、锚点与主模型
 
-在保持既有队列、t_sepsis/t_ICU 双锚点、Sepsis-3 疑似感染定义和 24h competing-risk label 不变的前提下，我们完成了临床精简特征集实验。F15_clinically_parsimonious_feature_set、F25_clinical_core_set 和 F40_balanced_transport_set 均成功训练，并与 MT3_Post_METRE_transport_reference_model 在同一框架下比较。
+最终主结果应报告 `P15_clinically_parsimonious_transport_model`，并明确其是正式主模型。P15 在 eICU 外部验证中的冻结指标为 AUROC 0.8103、AUPRC 0.1892、校准斜率 1.0031。
 
-## 临床精简特征集与 P15 clinically parsimonious transport model
+## 临床简化候选
 
-P15_clinically_parsimonious_transport_model 沿用 legacy/internal alias `P15_minimal_bedside_model`，但它不是全床旁人工评分。该模型仅使用 15 个临床可解释特征，包括时间锚点、常规生命体征、常规实验室指标和 shared support-intensity proxy。在 eICU 外部验证中，P15 的 AUROC/AUPRC/calibration slope 为 0.8103/0.1892/1.0031。
+`P12_true_trained_clinical_landing_model` 已完成真实训练和外部验证，可作为临床简化候选展示。`P10_true_trained_ultra_minimal_sensitivity_model` 已完成真实训练和外部验证，可作为极简敏感性候选展示。二者均不自动替代 P15。
 
-这一表现不低于 MT3_Post_METRE_transport_reference_model（legacy ID `MT3_physiology_support_proxy`；eICU AUROC/AUPRC/calibration slope 为 0.8090/0.1863/0.9652），说明模型的外部迁移能力主要依赖少数稳定、可迁移的病理生理变量和共享支持强度代理变量，而不是高维 measurement-process 或复杂派生特征。
+## 实验室时效性
 
-因此，P15 被冻结为最终推荐的临床精简迁移模型；MT3 保留为 Post-METRE transport reference 和性能参考。
+实验室变量应写成 latest-available / capped carry-forward，而不是每小时真实测量。12h freshness 属于边界可接受，24h freshness 基本稳定。result availability time 不完整，应作为局限性说明。
+
+## 支持强度 proxy
+
+shared support-intensity proxy 是跨数据库支持负荷代理变量，不是 full VIS。full VIS 只能作为 internal-rich 或敏感性讨论背景。

@@ -1,45 +1,23 @@
-# FINAL PROJECT SUMMARY
+# Final Project Summary
 
-## Final research goal
+## Final frozen position
 
-This project builds a dynamic competing-risk prediction framework for 24-hour ICU sepsis deterioration and death, using MIMIC-IV as the primary development source and eICU as external validation. The final manuscript-facing model is the clinically parsimonious transport model P15.
+The final manuscript-facing model is `P15_clinically_parsimonious_transport_model`. It remains the only formal main model and keeps the frozen eICU external metrics: AUROC 0.8103, AUPRC 0.1892, and calibration slope 1.0031.
 
-## Final model roles
+`P12_true_trained_clinical_landing_model` and `P10_true_trained_ultra_minimal_sensitivity_model` have moved beyond simulation-only summaries through true MIMIC-only training and eICU external validation. P12 is a validated simplified implementation candidate. P10 is a validated ultra-minimal sensitivity candidate. Neither model automatically replaces P15.
 
-- `P15_clinically_parsimonious_transport_model`: formal main result model.
-- `P15_minimal_bedside_model`: legacy/internal alias for traceability only.
-- `MT3_Post_METRE_transport_reference_model`: Post-METRE transport reference model.
-- `M1_internal_rich_reference_model`: internal rich/reference model.
-- `P12_balanced_transport_set`: clinical simplification candidate, simulated sensitivity only.
-- `P10_ultra_minimal_transport_set`: ultra-minimal sensitivity scenario, simulated sensitivity only.
-- `phenotype`: stratification/explanation/calibration audit tool, not a performance driver.
+## Clinical implementation positioning
 
-## Frozen P15 performance
+P15 is intended for EHR implementation. It is not a bedside-only manual score because it uses latest-available carry-forward laboratory variables and a shared support-intensity proxy. P12 can be discussed as a simplification candidate if clinical feature burden must be reduced. P10 should remain an ultra-minimal sensitivity option.
 
-- eICU AUROC = 0.8103
-- eICU AUPRC = 0.1892
-- eICU calibration slope = 1.0031
+## Laboratory freshness
 
-## Clinical implementation conclusion
+The project explicitly treats laboratory variables as latest-available / capped carry-forward values, not hourly real measurements. The 12h freshness sensitivity for P15 has eICU AUROC/AUPRC/calibration slope = 0.7847 / 0.1674 / 0.9779, which is borderline acceptable. The 24h freshness sensitivity has eICU AUROC/AUPRC/calibration slope = 0.8085 / 0.1860 / 0.9991, which is largely stable. No additional look-ahead was identified under available timestamps, but result availability time is incomplete and chart/sample time was used as a conservative approximation.
 
-P15 remains the formal main model. P12 is the preferred simplification candidate if implementation burden must be reduced, but it must be presented as a simulated implementation estimate. P10 is an ultra-minimal sensitivity scenario. The recommended proxy explanation for clinical communication is the dual-index view: `shared_support_intensity_proxy + support_lactate_component`.
+## Proxy and clinical utility boundaries
 
-## Claims that must not be overstated
+The shared support-intensity proxy is not full VIS and should be explained as a cross-database support burden proxy. DCA and first-alarm lead-time analyses are supplementary utility estimates. They support risk stratification and monitoring-escalation discussion, not automatic treatment recommendations.
 
-- P12 and P10 are not newly trained models.
-- P12 is not the formal main model.
-- full VIS is not the shared support-intensity proxy.
-- DCA or lead-time outputs are not automatic intervention triggers.
-- Phenotype should not be framed as a main performance driver.
+## Current readiness
 
-## Ready for manuscript writing
-
-Yes, with the above boundaries. Use `results_final/` and `final_freeze/` as the final-facing sources. Historical files under `archive/` are retained only for audit and lineage.
-
-## P12/P10 True-Training Validation Update
-
-- P12/P10 have been true-trained under the frozen Step 1-8 setup without changing cohort, labels, anchors, splits, or features.
-- P12 role after validation: `validated_simplified_implementation_candidate`.
-- P10 role after validation: `validated_ultra_minimal_sensitivity_candidate_but_not_main_model`.
-- Frozen P15 remains the final manuscript-facing model unless the PI explicitly re-freezes the model hierarchy.
-- full VIS remains separate from the shared support-intensity proxy.
+The repository is ready for final manuscript writing after reading the final file index and cleanup report. Archive materials are retained for audit traceability but are not the main result path.
