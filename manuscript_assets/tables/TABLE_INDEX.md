@@ -10,3 +10,12 @@
 | Supplementary_Table_S2_DCA_Summary.csv | DCA threshold summary | P12/P10 true-training DCA summary | supplementary | not automatic intervention trigger |
 | Supplementary_Table_S3_Leadtime_Summary.csv | Lead-time summary | P12/P10 true-training lead-time summary | supplementary | risk-stratification timing support only |
 | Supplementary_Table_S4_Honest_Reporting_Checklist.csv | Honest reporting checklist | Final honest reporting checklist | supplementary | TRIPOD+AI alignment support |
+
+## Bootstrap 95% Confidence Interval Tables
+
+- `Table2_Main_Model_Performance_with_95CI.csv`: manuscript Table 2 with patient-level / cluster-level bootstrap 95% CIs.
+- `Table3_Clinical_Implementation_TrueTraining_with_95CI.csv`: P12/P10 true-training validation table with bootstrap 95% CIs.
+- `Table4_Lab_Freshness_Sensitivity_with_95CI.csv`: lab freshness sensitivity table with bootstrap 95% CIs.
+- `../supplement/Supplementary_Table_S5_Bootstrap_CI_AllMetrics.csv`: all bootstrap CI metrics for audit and supplement.
+
+Original point-estimate-only tables remain preserved for audit traceability.

@@ -36,3 +36,9 @@
 - `manuscript_assets/FINAL_MANUSCRIPT_NUMBERS.md`
 - `manuscript_assets/audit/Manuscript_Number_Source_Map.csv`
 - `manuscript_assets/audit/Manuscript_Asset_Step1_Consistency_Check.md`
+
+## Bootstrap confidence interval assets
+
+- 95% CI tables were generated using patient-level / cluster-level bootstrap with `1000` requested resamples and seed `20260511`.
+- CI tables should be used for manuscript Results where uncertainty intervals are required.
+- Original point-estimate tables remain preserved for audit traceability.

@@ -84,3 +84,11 @@ Generated from final authority files in this repository. Missing values are repo
 ## Missing source files
 
 - none
+
+## Bootstrap 95% confidence intervals
+
+- 95% CI tables have been generated using patient-level / cluster-level bootstrap.
+- Resamples requested: `1000`.
+- Random seed: `20260511`.
+- CI tables should be used for manuscript Results.
+- Original point-estimate tables remain preserved for audit traceability and remain the frozen authoritative point estimates.
