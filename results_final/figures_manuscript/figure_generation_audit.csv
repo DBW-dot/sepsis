@@ -1,0 +1,8 @@
+﻿item,data_source,success,point_estimates_reproduced,prediction_level_file_used,missing_file,unstable_ci,main_text_ready,notes
+input_check,table1_primary_requested:D:\try\github_chatgpt_share_repo\results_package\tables\Table1_Cohort_Characteristics.csv,False,not_applicable,False,missing_file,,False,Required input missing.
+Figure1,workflow schematic; no row-level data,True,not_applicable,False,,,True,Generated without using outcome point estimates.
+Figure2,results_final/tables/bootstrap_ci_main_results.csv,True,yes,False,,,True,All key eICU point estimates and CIs reproduced from bootstrap CI table.
+Figure3,prediction-level files and frozen P15 inference,True,yes,True,,,True,"Decile calibration bins generated for P15, 70-feature reference, and Dynamic SOFA."
+Figure4,D:\try\github_chatgpt_share_repo\results_final\clinical_implementation\P12_P10_TrueTraining_DCA_Summary.csv,True,not_applicable,False,,,True,DCA shown as supplementary clinical utility estimate only.
+Figure5,results_final/tables/bootstrap_ci_subphenotype_results.csv,True,yes,False,,,True,Only P15 eICU external phenotype-specific results shown.
+Table1,D:\try\github_chatgpt_share_repo\results_final\tables\Table1_Cohort_Characteristics.csv,True,not_applicable,False,primary_requested_path_missing_used_fallback,,True,Word-friendly CSV and Markdown generated.

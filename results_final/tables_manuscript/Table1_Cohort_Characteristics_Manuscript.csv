@@ -1,0 +1,19 @@
+﻿section,variable,notes,MIMIC_overall,MIMIC_is_sepsis_on_admission_1,MIMIC_is_sepsis_on_admission_0,eICU_overall,eICU_is_sepsis_on_admission_1,eICU_is_sepsis_on_admission_0
+Cohort size,"ICU stays, n",Model-ready stay-level cohorts.,"34,125","28,743","5,382","9,032","3,784","5,248"
+Cohort size,"Patients, n",Unique patients among modeled stays.,"27,899","23,901","5,183","8,754","3,728","5,134"
+Demographics,"Age, mean ± SD (years)",Joined from repaired stay spines.,64.2 ± 16.1,64.4 ± 16.0,62.9 ± 16.1,64.8 ± 16.0,64.6 ± 16.3,65.0 ± 15.7
+Demographics,"Female sex, n (%)",Sex normalized from repaired stay spines.,"14,631 (42.9%)","12,491 (43.5%)","2,140 (39.8%)","4,263 (47.2%)","1,766 (46.7%)","2,497 (47.6%)"
+Anchor / severity,"Baseline SOFA, median [IQR]",From Step 1 spine.,"0.00 [0.00, 1.00]","0.00 [0.00, 1.00]","5.00 [3.00, 7.00]",,,
+Anchor / severity,"Hours since ICU admission at first legal t_pred, median [IQR]",First legal t_pred uses the 24 h lookback rule.,"24.00 [24.00, 24.00]","24.00 [24.00, 24.00]","24.00 [24.00, 25.00]","24.00 [24.00, 24.00]","24.00 [24.00, 24.00]","24.00 [24.00, 24.00]"
+Phenotype distribution,"Phenotype_1, n (%)",Stay-level phenotype assignment.,"25,250 (74.0%)","23,623 (82.2%)","1,627 (30.2%)","7,994 (88.5%)","3,728 (98.5%)","4,266 (81.3%)"
+Phenotype distribution,"Phenotype_2, n (%)",Stay-level phenotype assignment.,"8,004 (23.5%)","5,120 (17.8%)","2,884 (53.6%)",583 (6.5%),56 (1.5%),527 (10.0%)
+Phenotype distribution,"Phenotype_3, n (%)",Stay-level phenotype assignment.,871 (2.6%),0 (0.0%),871 (16.2%),455 (5.0%),0 (0.0%),455 (8.7%)
+Clinical snapshot,"MAP latest value, median [IQR]",At first legal t_pred.,"75.00 [67.00, 84.00]","75.00 [67.00, 84.00]","76.00 [68.00, 85.50]","74.00 [68.00, 83.00]","75.00 [68.00, 83.00]","74.00 [68.00, 83.00]"
+Clinical snapshot,"Shock index, median [IQR]",At first legal t_pred.,"0.73 [0.61, 0.88]","0.74 [0.61, 0.88]","0.73 [0.59, 0.89]","0.80 [0.65, 0.97]","0.81 [0.67, 0.98]","0.79 [0.64, 0.97]"
+Clinical snapshot,"Creatinine latest value, median [IQR]",At first legal t_pred.,"1.00 [0.70, 1.60]","1.00 [0.70, 1.50]","1.10 [0.80, 2.10]","1.23 [0.80, 2.16]","1.11 [0.76, 1.86]","1.35 [0.84, 2.36]"
+Clinical snapshot,"Bilirubin latest value, median [IQR]",At first legal t_pred.,"0.70 [0.40, 1.60]","0.70 [0.40, 1.50]","0.90 [0.50, 2.40]","0.70 [0.40, 1.40]","0.60 [0.40, 1.10]","0.80 [0.46, 1.60]"
+Clinical snapshot,"Platelet latest value, median [IQR]",At first legal t_pred.,"180.00 [126.00, 250.00]","184.00 [130.00, 254.00]","160.00 [105.00, 230.00]","177.00 [119.00, 246.00]","191.50 [139.00, 258.00]","165.00 [106.00, 236.00]"
+Data availability,"MAP missing, n (%)",Explicitly retained to reflect cross-database instability.,"2,578 (7.6%)","2,251 (7.8%)",327 (6.1%),"6,153 (68.1%)","2,772 (73.3%)","3,381 (64.4%)"
+Data availability,"Shock index missing, n (%)",Explicitly retained to reflect cross-database instability.,"3,568 (10.5%)","2,957 (10.3%)",611 (11.4%),"6,403 (70.9%)","2,865 (75.7%)","3,538 (67.4%)"
+Data availability,"Bilirubin missing, n (%)",Explicitly retained to reflect cross-database instability.,"18,115 (53.1%)","16,050 (55.8%)","2,065 (38.4%)","3,433 (38.0%)","1,506 (39.8%)","1,927 (36.7%)"
+Data availability,"Ventilation status missing, n (%)",Explicitly retained to reflect cross-database instability.,"1,368 (4.0%)","1,179 (4.1%)",189 (3.5%),"8,446 (93.5%)","3,538 (93.5%)","4,908 (93.5%)"

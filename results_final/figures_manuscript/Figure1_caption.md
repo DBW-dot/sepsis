@@ -1,0 +1,3 @@
+# Figure 1. Study workflow and double-anchor dynamic prediction design
+
+This schematic summarizes the retrospective double-anchor competing-risk prediction design. MIMIC-IV was used for model development and internal validation, while eICU was used only for external validation. Prediction landmarks were generated on a one-hour grid using prefix-only information. The 24-hour outcome was framed as a competing-risk problem with ICU death, alive ICU discharge/transfer, and continued ICU stay as mutually exclusive states. Laboratory predictors were represented as latest-available / capped carry-forward values rather than hourly laboratory measurements.

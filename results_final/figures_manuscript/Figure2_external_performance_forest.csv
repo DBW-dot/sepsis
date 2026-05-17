@@ -1,0 +1,16 @@
+﻿panel,model_name,display_name,metric,point_estimate,ci_lower,ci_upper
+A. AUROC,P10_true_trained_ultra_minimal_sensitivity_model,P10 ultra-minimal sensitivity candidate,eICU_AUROC,0.7978,0.7834,0.8108
+A. AUROC,P12_true_trained_clinical_landing_model,P12 simplified implementation candidate,eICU_AUROC,0.8038,0.7897,0.8166
+A. AUROC,C1_dynamic_SOFA_clinical_comparator,Dynamic SOFA,eICU_AUROC,0.7253,0.7082,0.7420
+A. AUROC,M1_internal_rich_reference_model,70-feature high-dimensional reference model,eICU_AUROC,0.7090,0.6921,0.7239
+A. AUROC,P15_clinically_parsimonious_transport_model,P15 double-anchor model,eICU_AUROC,0.8103,0.7963,0.8232
+B. AUPRC,P10_true_trained_ultra_minimal_sensitivity_model,P10 ultra-minimal sensitivity candidate,eICU_AUPRC,0.1711,0.1526,0.1921
+B. AUPRC,P12_true_trained_clinical_landing_model,P12 simplified implementation candidate,eICU_AUPRC,0.1767,0.1576,0.1976
+B. AUPRC,C1_dynamic_SOFA_clinical_comparator,Dynamic SOFA,eICU_AUPRC,0.0669,0.0570,0.0768
+B. AUPRC,M1_internal_rich_reference_model,70-feature high-dimensional reference model,eICU_AUPRC,0.0377,0.0339,0.0414
+B. AUPRC,P15_clinically_parsimonious_transport_model,P15 double-anchor model,eICU_AUPRC,0.1892,0.1681,0.2116
+C. Calibration slope,P10_true_trained_ultra_minimal_sensitivity_model,P10 ultra-minimal sensitivity candidate,eICU_calibration_slope,1.0133,0.9542,1.0720
+C. Calibration slope,P12_true_trained_clinical_landing_model,P12 simplified implementation candidate,eICU_calibration_slope,1.0100,0.9476,1.0655
+C. Calibration slope,C1_dynamic_SOFA_clinical_comparator,Dynamic SOFA,eICU_calibration_slope,0.4919,0.4556,0.5263
+C. Calibration slope,M1_internal_rich_reference_model,70-feature high-dimensional reference model,eICU_calibration_slope,0.0728,0.0566,0.0892
+C. Calibration slope,P15_clinically_parsimonious_transport_model,P15 double-anchor model,eICU_calibration_slope,1.0031,0.9413,1.0584
