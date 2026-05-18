@@ -1,0 +1,3 @@
+# Results 插入段落：P12/P10 低负担实现验证
+
+在冻结的 P15 主模型基础上，P12 和 P10 作为低负担实现候选进行了真实训练验证，而不是仅保留模拟敏感性估计。P12 保留 12 个变量，相对 P15 删除 support_hemodynamic_component, support_renal_component, support_respiratory_component，eICU 外部 AUROC/AUPRC/校准斜率为 0.8038/0.1767/1.0100 （95% CI: AUROC 0.7897-0.8166; AUPRC 0.1576-0.1976; 校准斜率 0.9476-1.0655）。P10 保留 10 个变量，相对 P15 删除 wbc_latest_value, support_hemodynamic_component, support_lactate_component, support_renal_component, support_respiratory_component，eICU 外部 AUROC/AUPRC/校准斜率为 0.7978/0.1711/1.0133 （95% CI: AUROC 0.7834-0.8108; AUPRC 0.1526-0.1921; 校准斜率 0.9542-1.0720）。这些结果支持 P12/P10 作为低负担部署候选或敏感性模型进行补充展示，但不改变 P15 作为正式主模型的冻结定位；P15 保留完整支持强度代理分量，仍提供最完整的临床语义覆盖。
