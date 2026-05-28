@@ -1,0 +1,16 @@
+﻿internal_feature,death_class_coefficient,importance_abs_coefficient,feature_name,feature_category,deployment_difficulty,eicu_missing_rate,deployment_difficulty_score,plot_label
+hours_since_icu_admission,0.03410750365187174,0.03410750365187174,hours_since_icu_admission,时间锚点,低,0.0,1.0,hours_since_ICU
+hours_from_anchor,0.23416652278183933,0.23416652278183933,hours_from_anchor,疾病阶段,中,0.0,3.0,hours_from_anchor
+is_sepsis_on_admission,-0.14905273520943185,0.14905273520943185,is_sepsis_on_admission,疾病阶段,中,0.0,3.0,sepsis_on_admit
+hr_latest_value,0.19158462737807033,0.19158462737807033,heart_rate_latest_value,床旁生命体征,低,0.010531,1.0,heart_rate
+rr_latest_value,0.08151033513410481,0.08151033513410481,respiratory_rate_latest_value,床旁生命体征,低到中,0.057288,2.0,resp_rate
+spo2_latest_value,-0.24465085288633076,0.24465085288633076,spo2_latest_value,床旁生命体征,低,0.030935,1.0,SpO2
+creatinine_latest_value,-0.02119142847775852,0.02119142847775852,creatinine_latest_value,常规实验室,低,0.050438,1.0,creatinine
+bun_latest_value,0.23366183396405876,0.23366183396405876,bun_latest_value,常规实验室,低,0.051203,1.0,BUN
+platelet_latest_value,-0.1395197425979885,0.1395197425979885,platelet_latest_value,常规实验室,低,0.071476,1.0,platelet
+wbc_latest_value,0.1720395417424336,0.1720395417424336,wbc_latest_value,常规实验室,低,0.071892,1.0,WBC
+shared_support_intensity_proxy,0.21105577296736333,0.21105577296736333,shared_support_intensity_proxy,支持强度代理变量,中到高,0.0,4.0,shared_proxy
+support_hemodynamic_component,0.1942397967307769,0.1942397967307769,support_hemodynamic_component,支持强度代理变量,中到高,0.0,4.0,hemodynamic
+support_lactate_component,0.2028139380151045,0.2028139380151045,support_lactate_component,支持强度代理变量,中,0.0,3.0,lactate
+support_renal_component,0.03886480247419618,0.03886480247419618,support_renal_component,支持强度代理变量,中到高,0.0,4.0,renal_support
+support_respiratory_component,0.09174166563104491,0.09174166563104491,support_respiratory_component,支持强度代理变量,中到高,0.0,4.0,resp_support

@@ -1,0 +1,50 @@
+{
+  "validation_warnings": [],
+  "p15_event_rate": 0.02148937040415387,
+  "key_thresholds": {
+    "0.005": {
+      "sensitivity_recall": 1.0,
+      "PPV": 0.02148937040415387,
+      "net_benefit": 0.0165722315619636
+    },
+    "0.01": {
+      "sensitivity_recall": 1.0,
+      "PPV": 0.02148937040415387,
+      "net_benefit": 0.0116054246506604
+    },
+    "0.02": {
+      "sensitivity_recall": 1.0,
+      "PPV": 0.021490044933816788,
+      "net_benefit": 0.0015204062900787
+    },
+    "0.03": {
+      "sensitivity_recall": 1.0,
+      "PPV": 0.021500556713392526,
+      "net_benefit": -0.0087577538107378
+    },
+    "0.05": {
+      "sensitivity_recall": 0.997963971141504,
+      "PPV": 0.021709721183130217,
+      "net_benefit": -0.0294169695375645
+    },
+    "0.1": {
+      "sensitivity_recall": 0.9807462488381357,
+      "PPV": 0.024639629571558675,
+      "net_benefit": -0.0716220402140598
+    }
+  },
+  "outputs": [
+    "results_final\\tables\\threshold_prediction_file_audit.csv",
+    "results_final\\tables\\P15_eICU_threshold_specific_performance.csv",
+    "results_final\\tables\\P15_eICU_threshold_specific_performance_bootstrap_ci.csv",
+    "results_final\\tables\\P15_eICU_threshold_DCA_integrated_table.csv",
+    "results_final\\tables\\eICU_threshold_performance_model_comparison.csv",
+    "results_final\\tables\\Supplementary_Table_Sx_P15_threshold_specific_operational_performance.csv",
+    "results_final\\text\\Supplementary_Table_Sx_P15_threshold_specific_operational_performance_zh.md",
+    "results_final\\text\\P15_threshold_specific_results_insert_zh.md",
+    "results_final\\text\\P15_threshold_specific_discussion_insert_zh.md",
+    "results_final\\text\\P15_threshold_specific_performance_audit.md",
+    "results_final\\figures\\Supplementary_Figure_Sx_P15_threshold_sensitivity_PPV.png",
+    "results_final\\figures\\Supplementary_Figure_Sx_P15_threshold_sensitivity_PPV.pdf"
+  ]
+}

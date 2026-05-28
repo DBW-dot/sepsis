@@ -1,0 +1,152 @@
+{
+  "records": [
+    {
+      "figure_id": "Graphical Abstract",
+      "figure_name": "Graphical Abstract",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "mechanism schematic",
+      "data_source": "Locked manuscript numbers; no result recomputation",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Graphical_Abstract_P15_vs_highdimensional.png",
+      "output_pdf": "results_final\\figures\\Graphical_Abstract_P15_vs_highdimensional.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Figure 1",
+      "figure_name": "研究流程与双锚点竞争风险框架",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "mechanism/workflow schematic",
+      "data_source": "Locked cohort/model design documents",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Figure1_workflow_double_anchor_competing_risk.png",
+      "output_pdf": "results_final\\figures\\Figure1_workflow_double_anchor_competing_risk.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Figure 1B",
+      "figure_name": "患者轨迹与双锚点时间对齐",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "mechanism/timeline schematic",
+      "data_source": "Dual-anchor design; illustrative only",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Figure1B_double_anchor_patient_timeline.png",
+      "output_pdf": "results_final\\figures\\Figure1B_double_anchor_patient_timeline.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Figure 2 AUROC",
+      "figure_name": "模型从 MIMIC-IV 到 eICU 的外部迁移轨迹 (AUROC)",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "true results plot",
+      "data_source": "D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\bootstrap_ci_main_results.csv; D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\bootstrap_ci_clinical_implementation_models.csv",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Figure2_transportability_slopegraph_AUROC.png",
+      "output_pdf": "results_final\\figures\\Figure2_transportability_slopegraph_AUROC.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Figure 2 AUPRC",
+      "figure_name": "模型从 MIMIC-IV 到 eICU 的外部迁移轨迹 (AUPRC)",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "true results plot",
+      "data_source": "D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\bootstrap_ci_main_results.csv; D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\bootstrap_ci_clinical_implementation_models.csv",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Figure2_transportability_slopegraph_AUPRC.png",
+      "output_pdf": "results_final\\figures\\Figure2_transportability_slopegraph_AUPRC.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Figure 3",
+      "figure_name": "eICU 外部验证中的平滑校准曲线",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "true prediction-level reliability diagram",
+      "data_source": "D:\\try\\step7_main_modeling\\output\\Model_Ready_eICU_External.parquet; D:\\try\\step7_main_modeling\\output\\pred_main_eicu_external.parquet",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Figure3_eICU_smooth_calibration_curve.png",
+      "output_pdf": "results_final\\figures\\Figure3_eICU_smooth_calibration_curve.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Figure 4",
+      "figure_name": "eICU 外部验证中的决策曲线分析",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "true DCA results plot",
+      "data_source": "D:\\try\\github_chatgpt_share_repo\\results_final\\clinical_implementation\\P12_P10_TrueTraining_DCA_Summary.csv",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Figure4_eICU_decision_curve_analysis.png",
+      "output_pdf": "results_final\\figures\\Figure4_eICU_decision_curve_analysis.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Figure 5",
+      "figure_name": "P15 在 eICU 不同临床表型中的外部验证稳健性",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "true phenotype-stratified bootstrap result plot",
+      "data_source": "D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\bootstrap_ci_subphenotype_results.csv",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Figure5_subphenotype_robustness_eICU.png",
+      "output_pdf": "results_final\\figures\\Figure5_subphenotype_robustness_eICU.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Figure 6",
+      "figure_name": "P15 特征重要性与部署难度四象限图",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "true frozen-model coefficient importance plot",
+      "data_source": "D:\\try\\parsimonious_features\\model_P15_minimal_bedside_model.pkl; D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\P15_feature_source_availability_deployment_table.csv; D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\P15_feature_missingness_audit.csv",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Figure6_P15_feature_importance_vs_deployment_difficulty.png",
+      "output_pdf": "results_final\\figures\\Figure6_P15_feature_importance_vs_deployment_difficulty.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Supplementary Figure S1",
+      "figure_name": "P15 在 eICU 外部验证中的阈值特异性操作性能",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "true threshold-specific results plot",
+      "data_source": "D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\P15_eICU_threshold_specific_performance.csv",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Supplementary_Figure_S1_P15_threshold_operational_performance.png",
+      "output_pdf": "results_final\\figures\\Supplementary_Figure_S1_P15_threshold_operational_performance.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Additional Figure A",
+      "figure_name": "eICU 外部验证表现总览",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "true results summary plot",
+      "data_source": "D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\bootstrap_ci_main_results.csv; D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\bootstrap_ci_clinical_implementation_models.csv",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Additional_Figure_A_eICU_external_performance_overview.png",
+      "output_pdf": "results_final\\figures\\Additional_Figure_A_eICU_external_performance_overview.pdf",
+      "warning": ""
+    },
+    {
+      "figure_id": "Additional Figure B",
+      "figure_name": "eICU 外部校准斜率森林图",
+      "generated": true,
+      "inserted_into_word": false,
+      "figure_type": "true calibration-slope forest plot",
+      "data_source": "D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\bootstrap_ci_main_results.csv; D:\\try\\github_chatgpt_share_repo\\results_final\\tables\\bootstrap_ci_clinical_implementation_models.csv",
+      "script_used": "results_final\\scripts\\generate_final_manuscript_figures.py",
+      "output_png": "results_final\\figures\\Additional_Figure_B_eICU_calibration_slope_forest.png",
+      "output_pdf": "results_final\\figures\\Additional_Figure_B_eICU_calibration_slope_forest.pdf",
+      "warning": ""
+    }
+  ],
+  "complete_figures_pdf": "results_final\\figures\\sepsis_complete_figures_pack.pdf",
+  "word_inserted": false,
+  "word_note": "Word source unavailable: no .docx manuscript found under D:\\try or the share repository.",
+  "validation_warnings": []
+}
